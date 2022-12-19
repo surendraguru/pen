@@ -1,0 +1,23 @@
+h2 {
+  color: rgb(225, 252, 22);
+}
+h3, h4 {
+  color: aqua;
+}
+.topic-list {
+    display: grid;
+    grid-gap: 15px;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+}
+
+.item {
+    background-color: green;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+.item:hover {
+    background-color: blue;
+    color:yellow;
+}

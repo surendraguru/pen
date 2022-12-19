@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords"
+        content="Self Paced Training, Self-paced, Study Park, study-park, Computer, Computer note, SharaSkills, Surendra, Surendra Prasad Tharu, C, c++, html, html tutorials, css, javascript, python">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeswithspt</title>
+    <!--ICONSCOUNT CDN link-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts (Monteserrat)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+    <!--SWIPERJS.COM-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4 class="loname">StudyPark</h4>
+            </a>
+            <ul class="nav__menu">
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i></i>HOME</a></li>
+                <li><a href="academic.html"><i class="fa fa-graduation-cap"></i>ACADEMIC</a></li>
+                <li><a href="Programming.html"><i class="fa fa-file-code-o"></i>PROGRAMMING</a></li>
+                <li><a href="VIDEOS.html"><i class="fa fa-graduation-cap"></i>VIDEOS</a></li>
+                <li><a href="BCA.html"><i class="fa fa-paperclip"></i>BCA</a> </li>
+                <li><a href="evaluate.html"><i class="fa fa-paperclip"></i>MCQ</a> </li>
+                <li><a href="Virus.html"><i class="fa fa-paperclip"></i>Notes</a> </li>
+                <li><a href="projectwork.html"><i class="fa fa-paperclip"></i>Project</a> </li>
+            </ul>
+            <button id="open-menu-btn">Menu<i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn">Menu<i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!--=====END OF NAVBAR====-->
+
+    <header>
+        <div class="watch">
+            <div class="quote">
+                <h2>Time is the most precious, utilize it properly.</h2>
+            </div>
+            <div class="datetime">
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+        </div>
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="title">
+                    <h1 id="h1">Grow your skills to advance your career path.</h1>
+                </div>
+                <div class="title">
+                    <h3 id="h3">All things are possible because anything can be learned.</h3>
+                </div>
+                <div>
+
+                    <a href="Programming.html" class="btn btn-primary">Get Started</a>
+                    <a href="#about-author" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=====END OF header section====-->
+
+    <section class="Author" id="about-author">
+        <h2>Meet the Author/ Instructure/ Team</h2>
+        <div class="container team_container">
+            <article class="team">
+                <div class="team-image">
+                    <img src="./images/tm1.JPG" alt="">
+                </div>
+                <div class="team-info">
+                    <h4>Surendra Prasad Tharu (Badhai)</h4>
+                    <p>Solo Expert Tutor</p>
+                </div>
+                <div class="team-socials">
+                    <a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                    <a href="https://linkedIn.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- achievement section -->
+    <section class="about_achievement">
+        <div class="container about-achievement-container">
+            <div class="about_achievement-left">
+                <img src="./image/about achievements.svg" alt="">
+            </div>
+            <div class="about_achievements-right">
+                <h1>Achievements</h1>
+                <p>To brand for free Education and share SkillS
+                <div class="achievements_cards">
+                    <article class="achievement_card">
+                        <span class="achievement_icon">
+                            <i class="uil uil-video"></i>
+                        </span>
+                        <h3>YouTube tutorials</h3>
+                        <p>Courses</p>
+                    </article>
+                    <article class="achievement_card">
+                        <span class="achievement_icon">
+                            <i class="uil uil-trophy"></i>
+                        </span>
+                        <h3>Self-Paced Time</h3>
+                        <p>Awards</p>
+                    </article>
+                    <article class="achievement_card">
+                        <span class="achievement_icon">
+                            <i class="uil uil-users-alt"></i>
+                        </span>
+                        <h3>50,000+</h3>
+                        <p>Students</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====END OF Achievements ====-->
+
+    <!--===== FOOTERS section ====-->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>ShareSkills</h4>
+                </a>
+                <p>Grow your Skills</p>
+                <h5>Page Viewers:</h5>
+                <h4 id="count">0</h4>
+            </div>
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i></i>HOME</a></li>
+                    <li><a href="academic.html"><i class="fa fa-graduation-cap"></i>ACADEMIC</a></li>
+                    <li><a href="Programming.html"><i class="fa fa-file-code-o"></i>PROGRAMMING</a></li>
+                    <li><a href="VIDEOS.html"><i class="fa fa-graduation-cap"></i>VIDEOS</a></li>
+                    <li><a href="BCA.html"><i class="fa fa-paperclip"></i>BCA</a> </li>
+                    <li><a href="evaluate.html"><i class="fa fa-paperclip"></i>MCQ</a> </li>
+                    <li><a href="Virus.html"><i class="fa fa-paperclip"></i>Notes</a> </li>
+                    <li><a href="projectwork.html"><i class="fa fa-paperclip"></i>Project</a> </li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>9841355367</p>
+                    <p>shareskillsguru@gmail.com</p>
+                </div>
+
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //when window width is >=600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+    <script>
+        let time = document.getElementById("current-time");
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000)
+    </script>
+    <script>
+        const countE1 = document.getElementById("count");
+        countvisits();
+        function countvisits() {
+            fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
+                .then((res) => res.json())
+                .then((res) => {
+                    countE1.innerHTML = res.value;
+                });
+        } 
+    </script>
+</body>
+
+</html>
