@@ -1,0 +1,194 @@
+.body {
+    background: rgb(2, 28, 37);
+    /* height: 100vh; */
+}
+
+.title {
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    color: rgb(26, 25, 33);
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 5%;
+    line-height: 1.5;
+    /* max-width: 960px; */
+    margin: 0 auto;
+}
+
+.wrap-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-box label {
+    background: #721459;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2ps 10px -2px rgba(0, 0, 0, 0.5);
+    order: 1;
+    display: block;
+    padding: 5px 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap-box label:hover {
+    background: rgb(27, 3, 123);
+    border: 2px solid yellow;
+}
+
+.wrap-box .content {
+    display: none;
+    padding: 30px;
+    background: rgb(2, 31, 9);
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.wrap-box input[type="radio"] {
+    display: none;
+}
+
+.wrap-box input[type="radio"]:checked+label {
+    background: rgb(27, 3, 123);
+}
+
+.wrap-box input[type="radio"]:checked+label+.content {
+    display: block;
+}
+
+.ques {
+    color: rgb(71, 242, 24);
+    font-weight: bold;
+}
+
+.red {
+    color: #3bb914;
+}
+
+.program {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid purple;
+    width: auto;
+    justify-content: center;
+    padding: 1vh 3vw;
+}
+
+@media(max-width:600px) {
+
+    .wrap-box .content,
+    .wrap-box label {
+        order: initial;
+    }
+
+    .wrap-box label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+}
+
+
+/*========== team =======*/
+
+
+/*========== achievement =======*/
+.about_achievements {
+    margin-top: 3rem;
+}
+
+.about_achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about_achievements-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievement_card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement_card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievement_icon {
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.achievement_card:nth-child(2) .achievement_icon {
+    background: var(--color-success);
+}
+
+.achievement_card:nth-child(3) .achievement_icon {
+    background: var(--color-primary);
+}
+
+.achievement-card p {
+    margin-top: 1rem;
+}
+
+/*========== MEDIA QUERIES (TABLETS) =======*/
+@media screen and (max-width: 1024px) {
+    .about_achievements {
+        margin-top: 2rem;
+    }
+
+    .about_achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about_achievements-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team {
+        padding: 1rem;
+    }
+}
+
+/*========== MEDIA QUERIES (phones) =======*/
+@media screen and (max-width: 600px) {
+    .achievements_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team {
+        padding: 0;
+    }
+
+    .team p {
+        margin-bottom: 1.5rem;
+    }
+}
