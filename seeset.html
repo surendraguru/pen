@@ -210,13 +210,13 @@
                         </p>
                         <p><b><u>Corrected Program:</u></b></p>
                         <p class="program">CLS
-                            <br> OPEN “Record.Dat” FOR <U>APPEND</U> AS #1
+                            <br> OPEN “Record.Dat” FOR <b>APPEND</b> AS #1
                             <br> AA:
                             <br> INPUT “Enter Name, Class and Roll”; Nm$, Cl, Rn
-                            <br> <u>WRITE #1</u>, Nm$, Cl, Rn
+                            <br> <b>WRITE #1</b>, Nm$, Cl, Rn
                             <br> INPUT “More record Press y”, y$
                             <br> IF UCASE$(y$) = “Y” THEN GOTO AA:
-                            <br> CLOSE <u>#1</u>
+                            <br> CLOSE <b>#1</b>
                             <br> END
                         </p>
                     </div>
@@ -292,7 +292,301 @@
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
                         <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>9. (b) A sequential data file called “Record.txt” has stored data under the field heading
+                            Roll
+                            No., Name, Gender, English, Nepali, Maths and Computer. Write a program to display all the
+                            information of those students whose gender is ‘F’ and obtained marks in computer is more
+                            than 90.</h4>
+                        <p class="ques">REM “program to display all the information of those students whose gender is
+                            ‘F’ and obtained marks in computer is more than 90.”</p>
+                        <p class="program">OPEN "Record.txt" FOR INPUT AS #1
+                            <br> WHILE NOT EOF(1)
+                            <br> INPUT #1, RollNo, Name$, Gender$, English, Nepali, Maths, Computer
+                            <br> G$=MID$(Gender$,1,1)
+                            <br> IF UCASE$(G$) = "F" AND Computer > 90 THEN
+                            <br> &nbsp;PRINT "Roll No.: "; RollNo
+                            <br> &nbsp;PRINT "Name: "; Name
+                            <br> &nbsp;PRINT "Gender: "; Gender
+                            <br> &nbsp;PRINT "English: "; English
+                            <br> &nbsp;PRINT "Nepali: "; Nepali
+                            <br> &nbsp;PRINT "Maths: "; Maths
+                            <br> &nbsp;PRINT "Computer: "; Computer
+                            <br> END IF
+                            <br> WEND
+                            <br> CLOSE #1
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>10. Write a program in C Language that asks a number and check whether it is odd or even.[4]
+                        </h4>
+                        <p class="program">
+                            /* C Program that asks a number and check whether it is odd or even*/
+                            <br>#include &lt;stdio.h>
+                            <br> int main()
+                            <br> {
+                            <br> &nbsp; int num;
+                            <br> &nbsp; printf("Enter a number: ");
+                            <br> &nbsp; scanf("%d", &num);
+                            <br> &nbsp; if (num % 2 == 0)
+                            <br> &nbsp; &nbsp; {
+                            <br> &nbsp; &nbsp;&nbsp; printf("The number is even.\n");
+                            <br> &nbsp; &nbsp; }
+                            <br> &nbsp; else
+                            <br> &nbsp; &nbsp;{
+                            <br> &nbsp; &nbsp;&nbsp;printf("The number is odd.\n");
+                            <br> &nbsp; &nbsp;}
+                            <br> &nbsp; return 0;
+                            <br> }
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>10. OR Write a program in ‘C’ language to display the series with their sum , 1,2,3,4,………,up
+                            to 10Th terms. </h4>
+                        <p class="program">/* C program to display the series with their sum , 1,2,3,4,………,up to 10Th
+                            terms */
+                            <br> #include &lt;stdio.h>
+                            <br> int main()
+                            <br> {
+                            <br> &nbsp; int b;
+                            <br> &nbsp; int sum = 0;
+                            <br> &nbsp; for (b = 1; b <= 10; b++) <br> &nbsp; { <br> &nbsp;&nbsp;&nbsp;printf("%d \t",
+                                b);
+                                <br> &nbsp; &nbsp;sum +=b; <br> &nbsp;} <br>
+                                &nbsp; printf("\n Sum: %d\n", sum);
+                                <br> &nbsp; return 0; <br> }
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- SEE EXAMINATION 2078 -->
+            <input type="radio" name="box" id="box2">
+            <label for="box2">SEE EXAM 2078</label>
+            <div class="content">
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h3 class="cont">Group A</h3>
+                        <h4>1. Answer the following questions in one sentence: [6 x 1 = 6]</h4>
+                        <p class="ques">a. Write the name of two search engines. </p>
+                        <p>Search Engine are: google.com, bing.com, yahoo.com etc.</p>
+                        <p class="ques">b. What is Social medial?</p>
+                        <p>Social media is an internet-based form of communication or platform that allows users to have
+                            conversations, share information, ideas, interests and create web content.</p>
+                        <p class="ques">c. Which data type is suitable to store photographs of students in MS-Access?
+                        </p>
+                        <p>OLE Object data type is used to store photographs of students in MS-Access.</p>
+                        <p class="ques">d. Which view is used to modify a table in MS-Access?</p>
+                        <p>Design view is used to modify a table in MS-Access.</p>
+                        <p class="ques">e. Which statement is used to call sub-procedure?</p>
+                        <p>CALL statement is used to call sub-procedure in QBASIC.</p>
+                        <p class="ques">f. Write any two data types used in C language.</p>
+                        <p>Two data types used in C language are:
+                            ii)
+                            <br>&nbsp; i. Integer data int a;
+                            <br>&nbsp; ii. float data float a;
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group A</h3> -->
+                        <h4>2. Write appropriate technical term for the following: [1 + 1 = 2]</h4>
+                        <p class="ques">a. A system of copying data and information residing in computer into another
+                            location.</p>
+                        <p>Back up</p>
+                        <p class="ques">b. A company which provides services of Internet.</p>
+                        <p>ISP (Internet Service Provider)</p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group A</h3> -->
                         <h4>3. Write the full form of the following: [1 + 1 = 2]</h4>
+                        <p class="ques">(i) <b>FTP:</b> File Transfer Protocol</p>
+                        <p class="ques">(ii) <b>MAN:</b> Metropolitan Area Network</p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h3 class="cont">Group B</h3>
+                        <h4>4. Answer the following questions: [9 x 2 = 18]</h4>
+                        <p class="ques">(a) What is computer network? Write any two advantages of it.</p>
+                        <p>Computer Network is the connection of different computing devices for sharing resources
+                            (hardware, software, information).
+                            <br> Advantages of computer network are:
+                            <br>&nbsp; (i) Saves our time and money
+                            <br>&nbsp; (ii) Makes communication faster, cheaper and reliable.
+                        </p>
+                        <p class="ques">(b) What is computer ethics? Write any two of them.</p>
+                        <p>Computer ethics are a set of moral principles, procedures, values and practices that regulate
+                            the use of computers.
+                            <br> Some Commandments off computer ethics are;
+                            <br>&nbsp; (i) We should not use computer to harm other people
+                            <br>&nbsp; (ii) We should not use computer to steal information and to bear false witness
+                        </p>
+                        <p class="ques">(c) What is software security? Write any two measures of hardware security. </p>
+                        <p>Software security is an idea implemented to protect software against malicious attack and
+                            other hacker risks so that the software function correctly under such potential risks.
+                            <br> Protecting physical assets from outside threats is known as hardware security.
+                            <br> Two measures of hardware security are:
+                            <br>&nbsp; (i) never keep the hardware in the contact with fire and water.
+                            <br>&nbsp; (ii) cover the hardware to protect from dust
+                            <br>&nbsp; (iii) plugged off the system during thunder storm
+                            <br>&nbsp; (iv) properly switch off the system after use etc.
+                        </p>
+                        <p class="ques">(d) What is search engine? Write any two popular search engines.</p>
+                        <p>Search Engine is a web-based software (website) designed to search information from server.
+                            The two popular search engines are: google.com, bing.com etc.
+                        </p>
+                        <p class="ques">(e) What is e-Commerce? Write two benefits of it.</p>
+                        <p>E-commerce (electronic commerce) is the buying and selling of goods and services, or the
+                            transmitting of funds or data, over an electronic network and the internet.
+                            <br> Two benefits of e-commerce:
+                            <br>&nbsp; (i) Faster buying process.
+                            <br>&nbsp; (ii) Affordable advertising and marketing
+                        </p>
+                        <p class="ques">(f) Write any two advantages and disadvantages of social media.</p>
+                        <p>Advantages of social media are:
+                            <br>&nbsp; (i) Good Source of Up-to-Date Information.
+                            <br>&nbsp; (ii) Use of Social Media for Promotion and Advertising
+                            <br>Disadvantages of social media are:
+                            <br>&nbsp;(i) Fake News.
+                            <br>&nbsp;(ii) Hacking and Cyberbullying on Social Media
+                        </p>
+                        <p class="ques">(g) What is DBMS? Write any two advantages of it.</p>
+                        <p>Database Management System (DBMS) is software to create and manage databases, allowing users
+                            to create, read, update and delete data in a database.<br> Two advantages of DBMS are:
+                            <br>&nbsp; i. Improved data sharing and data security.
+                            <br>&nbsp; ii. Effective data integration.
+                            <br>&nbsp; iii. Increased productivity.
+                            <br>&nbsp; iv. Better decision-making
+                        </p>
+                        <p class="ques">(h) What is primary key? Write any two features of it.</p>
+                        <p>A primary key (keyword) is a column or a set of columns in a table (relational database)
+                            whose values uniquely identify a row in the table.
+                            <br> Features of Primary key are:
+                            <br>&nbsp; i. A primary key column cannot accept null values.
+                            <br>&nbsp; ii. A primary key uniquely identifies each field.
+                        </p>
+                        <p class="ques">(i) Defines Field and Record.</p>
+                        <p><b>Field:</b> is the heading of the column on the table of database which stores a
+                            particular category of data. Each field gives particular type of data of data of an entity.
+                            <b>Record:</b> refers to the row on a table of database which consists of the related data
+                            of a person or thing.
+                        </p>
+                        <p class="ques">(j) Define Form. Write any two uses of form in MS-Access.</p>
+                        <p>Form is an object in a database designed for interface to input, display, edit, data or for
+                            control of application execution.
+                            <br> Two uses of form in MS-Access are:
+                            <br>&nbsp; (a) Form is used to create a user interface for database.
+                            <br>&nbsp; (b) Form is used for data entry and select report.
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>5. Write down the output of the given program. Show with dry run-in table. [2]
+                        </h4>
+                        <p class="program">DECLARE SUB ABC(A)
+                            <br> &nbsp;CLS
+                            <br> &nbsp;A = 2
+                            <br> &nbsp;CALL ABC(A)
+                            <br> END
+                            <br> SUB ABC(A)
+                            <br> &nbsp;FOR J = A TO 5
+                            <br> &nbsp; &nbsp;PRINT A;
+                            <br> &nbsp; &nbsp;A = A + 3
+                            <br> &nbsp;NEXT J
+                            <br> END SUB
+                        </p>
+                        <p><img src="images/seeexam78.JPG" alt=""></p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>6. Re-write the given program after correcting the bugs. [2]</h4>
+                        <p>REM to add record in an existing file</p>
+                        <p class="program">DECLARE SUB Series()
+                            <br> &nbsp;CLS
+                            <br> &nbsp;EXECUTE Series
+                            <br> END
+                            <br> SUB Series()
+                            <br> REM program to generate 1 1 2 3 5 …… up to 20th terms.
+                            <br> &nbsp;A=1
+                            <br> &nbsp;B=1
+                            <br> &nbsp;FOR ctr = 10 TO 1
+                            <br> &nbsp;&nbsp;DISPLAY A;B;
+                            <br> &nbsp;&nbsp;A= A+B
+                            <br> &nbsp;&nbsp;B= A+B
+                            <br> &nbsp;NEXT ctr
+                            <br> END Series()
+                        </p>
+                        <p><b><u>Corrected Program:</u></b></p>
+                        <p class="program">DECLARE SUB Series()
+                            <br> &nbsp;CLS
+                            <br> &nbsp;<b>CALL</b> Series
+                            <br> END
+                            <br> SUB Series()
+                            <br> REM program to generate 1 1 2 3 5 …… up to 20th terms.
+                            <br> &nbsp;A=1
+                            <br> &nbsp;B=1
+                            <br> &nbsp;FOR ctr = <b>1 TO 10</b>
+                            <br> &nbsp; &nbsp;<b>PRINT</b> A;B;
+                            <br> &nbsp; &nbsp;A= A+B
+                            <br> &nbsp; &nbsp;B= A+B
+                            <br> &nbsp;NEXT ctr
+                            <br> END <b>SUB</b>
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>7. Study the following program and answer the given questions: [1+1]</h4>
+                        <p class="program">
+                            <br> DECLARE FUNCTION TEST(X)
+                            <br> &nbsp; X = 100
+                            <br> &nbsp; Z= TEST(X)
+                            <br> &nbsp; PRINT Z
+                            <br> END
+
+                            <br> FUNCTION TEST(X)
+                            <br> &nbsp;FOR R = 1 TO X
+                            <br> &nbsp;&nbsp;S=S+1
+                            <br> &nbsp;NEXT R
+                            <br> &nbsp;TEST = S
+                            <br> END FUNCTION
+                        </p>
+                        <p><b>(a) How many parameters are used in the above program?</b><br>
+                            Here, only one parameter is used as both first as Formal and again as Actual parameter that
+                            is X.
+                        </p>
+                        <p><b>(b) How many times does the statement S=S+1 execute in the above program?</b><br>
+                            The statement S=S+1 executes 100 times in the above program.
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h3 class="cont">Group C</h3>
+                        <h4>8. Convert / Calculate as per the instruction: [4 x 1 = 4]</h4>
 
                     </div>
                 </article>
@@ -300,725 +594,128 @@
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
                         <!-- <h3 class="cont">Group B</h3> -->
-                        <h4>3. Write the full form of the following: [1 + 1 = 2]</h4>
+                        <h4>9. (a) Write a program in QBASIC that asks length and breadth of a room and calculates its
+                            area and perimeter. Create a user-defined function to calculate area and sub-program to
+                            calculate perimeter.[4]</h4>
+                        <p class="program">REM program to calculate area and perimeter of a room.
+                            <br> DECLARE FUNCTION AREA(L,B)
+                            <br> DECLARE SUB PERIMETER(L,B,H)
+                            <br> CLS
+                            <br> INPUT "Enter length and breadth of a room", L, B
+                            <br> PRINT "The area of a room is", AREA(L, B)
+                            <br> CALL PERIMETER(L, B)
+                            <br> END
 
+                            <br> FUNCTION AREA (L, B)
+                            <br> &nbsp;&nbsp; A = L * B
+                            <br> &nbsp;&nbsp; AREA = A
+                            <br> END FUNCTION
+
+                            <br> SUB PERIMETER (L, B)
+                            <br> &nbsp;&nbsp;P=2 * (L + B)
+                            <br> &nbsp;&nbsp;PRINT "The volume of a room is", P
+                            <br> END SUB
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>9. (b) Write a QB program to create a sequential data file “Salary.dat” to store
+                            programmer’s name, salary and post according to the need of user.</h4>
+                        <p class="ques">REM “QB program to create a sequential data file “Salary.dat” to store
+                            programmer’s name, salary and post according to the need of user.”</p>
+                        <p class="program">OPEN "Salary.dat" FOR OUTPUT AS #1
+                            <br> &nbsp;TOP:
+                            <br> &nbsp;INPUT "Enter Programmer's Name, Salary, Post",N$,Sal,p$
+                            <br> &nbsp;WRITE #1, N$,Sal,p$
+                            <br> &nbsp;INPUT"For next record press (Y)",y$
+                            <br>&nbsp;IF UCASE$(y$)="Y" THEN GOTO TOP
+                            <br> CLOSE #1
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>10. Write a program in C Language that asks a number and check whether it is negative,
+                            positive or zero.[4]
+                        </h4>
+                        <p class="program">
+                            /* C program that asks a number and check whether it is negative, positive or zero.*/
+                            <br> &nbsp;#include &lt;stdio.h>
+                            <br> &nbsp;int main() {
+                            <br> &nbsp;&nbsp;int num;
+                            <br> &nbsp;&nbsp;printf("Enter a number: ");
+                            <br> &nbsp;&nbsp;scanf("%d", &num);
+                            <br> &nbsp;&nbsp;// Check the sign of the number
+                            <br> &nbsp;&nbsp;if (num &lt; 0)
+                            <br> &nbsp;&nbsp;{
+                            <br>&nbsp;&nbsp;&nbsp; printf("The number is negative.\n");
+                            <br> &nbsp;&nbsp;}
+                            <br> &nbsp;&nbsp;else if (num > 0) <br> &nbsp;&nbsp;{
+                            <br> &nbsp;&nbsp;&nbsp;printf("The number is positive.\n");
+                            <br> &nbsp;&nbsp;} <br> &nbsp;&nbsp; else <br> &nbsp;&nbsp;{
+                            <br> &nbsp;&nbsp;&nbsp;printf("The number is zero.\n");
+                            <br> &nbsp;&nbsp;}
+                            <br> &nbsp;&nbsp;return 0;
+                            <br> &nbsp;}
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>10. OR Write a program in ‘C’ language to display first 10 odd numbers.</h4>
+                        <p class="program">/* C program to display first 10 odd numbers.*/
+                            <br> #include &lt;stdio.h>
+                            <br> int main()
+                            <br> {
+                            <br> &nbsp; int b,odd=1;
+                            <br> &nbsp; for (b = 1; b &lt;= 10; b++)
+                            <br> &nbsp; {
+                            <br> &nbsp;&nbsp;&nbsp;printf("%d \t", odd);
+                            <br> &nbsp; &nbsp;odd=odd + 2;
+                            <br> &nbsp;}
+                            <br> }
+                        </p>
                     </div>
                 </article>
             </div>
-
             <!-- second tab starts -->
             <input type="radio" name="box" id="box3">
-            <label for="box3">Second-Term</label>
+            <label for="box3">PABSON-78 A</label>
             <div class="content">
-                <h3 class="cont">Reading material</h3>
+                <h3 class="cont"> PABSON BORAD EXAMINATION 2078 SET A</h3>
                 <!-- Short questions answer -->
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4 class="cont">Q1. Computer Fundamentals: Short answer questions</h4>
-                        <p class="ques">(a) What is a computer network? </p>
-                        <P>Ans: Computer Network is the group of different computing devices interconnected or
-                            interlinked for sharing resources (hardware, software, information).</P>
-                        <p class="ques">(b) Define Protocol. </p>
-                        <p>Ans: Protocol is the set of standard rules for transmitting data and making communication
-                            among different devices. E.g. TCP, IP, POP, UDP, FTP.</p>
-                        <p class="ques">(c) What is the business done through the internet?</p>
-                        <p>Ans: The business done through the Internet is known as E-Business / E-commerce. There are
-                            different types of online business process.</p>
-                        <p class="ques">(d) Which data type is used to store alpha numeric characters or special symbols
-                            in MS-Access?</p>
-                        <p>Ans: Text data type is used to store alpha numeric characters or special symbols in
-                            MS-Access.</p>
-                        <p class="ques">(e) Which view is used to modify a table in MS Access?</p>
-                        <p>Ans: Design view is used to modify a table in MS Access.</p>
-                        <p class="ques">(f) What is modular programming?</p>
-                        <p>Ans: Modular programming is the process of dividing a computer program into separate
-                            sub-programs to make programming easier and flexible. </p>
-                        <p class="ques">(g) What is communication media?</p>
-                        <p>Ans: Communication media refers to the means or medium of transferring (delivering and
-                            receiving) data or information.</p>
-                        <p class="ques">(h) What is database?</p>
-                        <p>Ans: A database is an organized collection of information, or data, with some purpose and
-                            stored electronically in a computer system.</p>
-                        <p class="ques">(i) Define digital citizenship. </p>
-                        <p>Ans: Digital citizenship is the citizen having ability to safely and responsibly access
-                            digital technologies, as well as being an active and respectful member of society, both
-                            online and offline. Or A digital citizen is a person utilizing information technology (IT)
-                            in order to engage in society, politics, and government. </p>
-                        <p class="ques">(j) What is cybercrime?</p>
-                        <p>Ans: Cybercrime is the illegal or criminal activities done by using computer and internet.
-                        </p>
-                        <p class="ques">(k) What is Electronic Transaction Act?</p>
-                        <p>Ans: Electronic Transaction Act 2063 (also known as ETA 2064) is regulating act for all the
-                            electronic transaction related issues and cybercrimes.</p>
-                        <p class="ques">(l) Define Firewall.</p>
-                        <p>Ans: A firewall is the network security systems that monitors and controls the traffic flow
-                            between the Internet and private network.</p>
-                        <p class="ques">(m) What is computer security?</p>
-                        <p>Ans: Computer security basically is the protection of computer systems and information from
-                            harm, theft, and unauthorized use.</p>
-                        <p class="ques">(n) What is biometric verification?</p>
-                        <p>Ans: Biometric verification is uniquely identified by evaluating one or more distinguishing
-                            biological traits.</p>
-                        <p class="ques">(o) Define E-Commerce.</p>
-                        <p>Ans: E-Commerce refers to the buying and selling of goods and products over computer
-                            communication network such as the Internet.</p>
-                        <p class="ques">(p) What is Online Payment?</p>
-                        <p>Ans: Online payment refers to the payment for buying goods or services through the Internet
-                            using different online payment gateway.</p>
-                    </div>
-                </article>
 
-                <!-- Technical Terms -->
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q2. Write the technical term or phrases of following statements. </h4>
-                        <p>(a) Sending and receiving messages electronically through the Internet. <em
-                                class="red">Messanger </em>
-                        </p>
-                        <p>(b) Law that governs the legal issues of cyberspace.
-                            <em class="red"> Cyber-Law/ Cyber-Ethics</em>
-                        </p>
-                        <p>(c) Buying and selling of goods, products, or services over the Internet.
-                            <em class="red"> E-Commerce</em>
-                        </p>
-                        <p>(d) The smallest unit to represent information on quantum computer.
-                            <em class="red"> A quantum bit or qubit </em>
-                        </p>
-                        <p>(e) The websites that search documents for specified keywords in WWW.
-                            <em class="red"> Search Engines</em>
-                        </p>
-                        <p>(f) The skilled computer expert who uses technical knowledge to overcome a problem.
-                            <em class="red"> Hacker</em>
-                        </p>
-                        <p>(g) The process of identifying an individual usually based on a username and password.
-                            <em class="red"> Authentication</em>
-                        </p>
-                        <p>(h) The network security systems that monitor and control the traffic flow.
-                            <em class="red"> Firewall.</em>
-                        </p>
-                        <p>(i) The technology to encode file or message
-                            <em class="red"> encoding</em>
-                        </p>
-                    </div>
-                </article>
-                <!-- fullform -->
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q3. FULL FORM</h4>
-                        <p><b>(a) NIC </b>= Network Interface Card</p>
-                        <p><b>(b) SMTP </b> = Simple Mail Transfer Protocol</p>
-                        <p><b>(c) MODEM </b>= MOdulator and DEModulator</p>
-                        <p><b>(d) FTP </b>= File Transfer Protocol</p>
-                    </div>
-                </article>
-                <!-- 2 marks questions answer -->
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4 class="cont">Q4. Answer the following questions</h4>
-                        <p class="ques">(a) Write any 2 differences between client/server and peer to peer architecture
-                            of the network. </p>
-                        <P>Ans:
-                            <b>Client/Server:</b>
-                            In Client-server network, one will be server and other client computers. It is Expensive and
-                            suitable for all organizations.
-                        </P>
-                        <p><b>Peer-to-Peer network</b>In Peer-to-Peer network, no any computer will be as server, or
-                            clients. It is cheaper and suitable for only small organizations</p>
-                        <p class="ques">(b) Distinguish between bounded and unbounded media in two points. </p>
-                        <P>Ans:
-                            <b>Bounded media:</b>is the media guided by a solid medium like cables. It is cheaper. It is
-                            also called guided media.
-                        </P>
-                        <p><b>Unounded media</b>is the medium which is not guided by any physical cables. it is costly.
-                            It is also called unguided media.</p>
-                        <p class="ques">(c) What is cyber ethics? Write any two importance of Cyber-Ethics.</p>
-                        <p>Ans: Computer ethics is a concept in ethics that addresses the ethical issues and constraints
-                            that arise from the use of computers technologies. Cyberethics is a branch of computer
-                            technology behavior that defines the best practices that must be adopted by a user while
-                            using computer system. It Prevents Misuse of Personal Information, Prevents Theft of
-                            Intellectual Property, and Prevents Loss of Various Jobs in the field of Software
-                            Development.</p>
-                        <p class="ques">(d) Write any four commandments of computer ethics.</p>
-                        <p>Ans: The Ten Commandments of Computer Ethics<BR>
-                            1. Do not use a computer to harm others<BR>
-                            2. Do not interfere with others’ computer work.<BR>
-                            3. Do not browse through other people’s data files.<BR>
-                            4. You should not cheat anyone with a computer.<BR>
-                            5. Do not bear false witness with the help of a computer.<BR>
-                            6. Do not copy or use proprietary software that you have not paid for.<BR>
-                            7. Do not use other people’s computer resources without authorization or proper
-                            compensation<BR>
-                            8. You should not appropriate other people’s intellectual output<BR>
-                            9. You must consider the social consequences of the programs or processes you are writing or
-                            constructing.<BR>
-                            10. Always use a machine in a manner that is kind and respectful to other people.
-                        </p>
-                        <p class="ques">(e) What is software security? Write any two measures of hardware security.</p>
-                        <p>Ans: Software security is the process to protect software against malicious attack and other
-                            hacker risks so that the software continues to function correctly. <BR>
-                            Some Important measures of hardware security:
-                            <br>1) keep the system software updated <br>
-
-                            2) make sure that you have your wits with you <br>
-
-                            3) enable a firewall such as, comodo and tiny wall <br>
-
-                            4) adjust your browser settings <br>
-
-                            5) install anti virus and anti spyware software <br>
-
-                            6) protect and lock your device by a strong password <br>
-
-                            7) encrypt your data <br>
-
-                            8) use VPN <br>
-
-                            9) switch off the system after using <br>
-
-                            10) plugged off the system during thunder storm <br>
-                        </p>
-                        <p class="ques">(f) What is m-commerce? Write its two important services.</p>
-                        <p>Ans: M-Commerce (Mobile commerce) refers to the process of buying and selling of goods and
-                            services through smartphones, tablets or personal digital assistants (PDAs). <br>The
-                            Important services of M-commerce are: <br>a) Purchasing airline tickets <br>b) Purchasing
-                            movie tickets <br>c) Restaurant/Hotel booking and reservation <br>d) Top-Up Charges <br>e)
-                            Balance Enquiry <br>f) Utility Payment <br>g) Fund Transfer
-                        </p>
-                        <p class="ques">(g) What is IoT? Write any two importance of it.</p>
-                        <p>Ans: IoT (Internet of Things), the most important technologies: is a system of interrelated
-                            computing device to exchange information over a network without human-to-human or human to
-                            computer interaction.</p>
-                        <p class="ques">(h) What is primary key? List any two advantages of it.</p>
-                        <p>Ans: Primary Key is a special field or group of fields in the table that uniquely identifies
-                            each record from the database.<br>
-                            Importance of Primary Key are: <br>To identify each record of a table uniquely. <br>To
-                            reduce and control duplication of the record in a table. <br>To set the relationship between
-                            tables.
-                            .</p>
-                        <p class="ques">(i) What is data sorting? List any two advantages of using it.</p>
-                        <p>Ans: The process of arranging all the records in a table either ascending or descending order
-                            based on field or fields is known as sorting.
-                            Text types of data are sorted in alphabetical order (i.e. A to Z or Z to A). Date and Time
-                            data are sorted from oldest to newest or newest to oldest.
-                            Save out time.
-                        </p>
-                        <p class="ques">(j) What types of work is done in MS-Access using Form and Query object?</p>
-                        <p>Ans: FORM object in MS-Access is used to interface window for your to get require data where
-                            QUERY object is used to perform some calculations and operations on data.
-                        </p>
-                        <p class="ques">(k) Write any two opportunities and two threats in social media.</p>
-                        <p>Ans: Social media is a process of performing a variety of tech-enabled activities via virtual
-                            communities and network. It plays a vital role in changing the way of people communicate and
-                            keep in touch. It provides tremendous <b>opportunities</b> for various brands to reach their
-                            customers. They are: <br>
-                            a) Brand Development: social media is a spectacular tool to grow a business. It allows
-                            customers to connect and interact with the business on a more personal level. <br>
-                            b) Target Audience: Social media is one of the effective platforms to reach the target
-                            audience.
-                            c) Customer Interaction <br>
-                            d) Attracting Customer <br>
-                            e) Research <br>
-                            <b>Social Media Threats:</b> <br>
-                            i. Social Engineering One of the biggest threats of social media is social engineering. <br>
-                            ii. Targeted Phishing Attacks These attacks are carried out to steal money or certain
-                            confidential information. <br>
-                            iii. Fake Accounts <br>
-                            iv. Social Media used for spreading spam and malware
-                        </p>
-                        <p class="ques">(m) What is a power protection device? Write its role in computer security.</p>
-                        <p>Ans:A power surge protector is a device that is used to safeguard other electrical devices
-                            against any power surge, small or large, and protect them to be damaged. A power surge
-                            protector also works as a common outlet for multiple devices. </p>
-                        <p class="ques">(n) Write any four advantages of cloud computing?</p>
-                        <p>Ans: Cloud Computing is an Internet-based computing to provide online resources (software,
-                            platform, infrastructure) on demand basis. E.g.Google Drive. The advantages of cloud
-                            computing are: <br> 1. it allows to store, process, share resources. <br> 2. it is more
-                            secure and easy accessible <br> 3. it is cheaper than other storage. <br> 4. it provides
-                            various platform such as education, businesss etc.</p>
-                        <p class="ques">(o) How is AI software is different from other software? </p>
-                        <p>Ans: Artificial intelligence (AI) is the study of how computers can solve problems by
-                            imitating human intelligence. This involves tasks such as learning, reasoning, and natural
-                            communication. In contrast, traditional software is a program that runs on your computer. It
-                            can be installed from a CD or downloaded online.</p>
-                        <p class="ques">(p) Define indexing. Mention any two importance.</p>
-                        <p>Ans: </p>
-                        <p class="ques">(q) Define freezing and unfreezing the column. How is it done?</p>
-                        <p class="ques">(r) What is Query? Write any two importance of Query in database?</p>
-                        <p class="ques">(s) What is form? Why form is required in MS-Access?</p>
-                    </div>
-                </article>
-                <!-- 2marks Q/A -->
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q5. Write the output of the given program. Show with dry run table. [2]</h4>
-                        <p><img src="images/dryruna.JPG" alt=""></p>
-                        <p><img src="images/dryrunb.JPG" alt=""></p>
-                        <p><img src="images/dryrunc.JPG" alt=""></p>
-                    </div>
-                </article>
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q6. Re-Write the given program after correcting the bugs. [2]</h4>
-                        <p><img src="images/buga.JPG" alt=""></p>
-                        <p><img src="images/bugb.JPG" alt=""></p>
-                        <p><img src="images/bugc.JPG" alt=""></p>
-                    </div>
-                </article>
-
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q7. Study the following program and answer the given questions. [2*1=2]</h4>
-                        <p><img src="images/analyticala.JPG" alt=""></p>
-                        <p><img src="images/analyticalb.JPG" alt=""></p>
-                        <p><img src="images/analyticalc.JPG" alt=""></p>
-                    </div>
-                </article>
-
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>Q9. Write QBASIC programs (any three): [3 * 4 = 12]</h4>
-                        <p class="ques">(a) Write a program in QBASIC that asks to input Name of student and display
-                            Roll, Name, Class, Age of the Student from “record.txt” file.</p>
-                        <p class="program">Open "INFO.dat" For Input As #1 <br>
-                            Input "Enter name of the students "; Sn$ <br>
-                            While Not EOF(1) <br>
-                            Input #1, R, Nm$, Cl$, A <br>
-                            If UCase$(Sn$) = UCase$(Nm$) Then <br>
-                            Print R, Nm$, Cl$, A <br>
-                            End If <br>
-                            Wend <br>
-                            Close #1 <br>
-                            End
-                        </p>
-                        <p class="ques">(b) Write a program in QBASIC to print the following Fibonacci series using SUB
-                            procedure: 1 1 2 3 5 8 up to nth term.</p>
-                        <p class="program">DECLARE SUB Fibo (N) <br>
-                            CLS <br>
-                            INPUT “ENTER THE NUMBER OF TERMS”, N <br>
-                            CALL Fibo (N) <br>
-                            END <br>
-                            SUB Fibo (N) <br>
-                            A=1: B=1 <br>
-                            PRINT A, B, <br>
-                            FOR A = 1 TO N STEP 1 <br>
-                            C = A + B <br>
-                            PRINT C, <br>
-                            A = B <br>
-                            B = C <br>
-                            NEXT <br>
-                            END SUB
-                        </p>
-                        <p class="ques">(c) Write a program in QBASIC that asks length, breadth and height of room and
-                            calculates its area and volume. Create a user-defined function to calculate area and
-                            sub-program to calculate volume. Hint: [A = L x B], [V = L x B x H].</p>
-                        <p class="program">DECLARE FUNCTION AREA (L, B) <br>
-                            DECLARE SUB VOLUME (L, B, H) <br>
-                            CLS <br>
-                            INPUT “ENTER length, breadth and height of room”, L, B, H <br>
-                            PRINT “THE AREA OF ROOM IS:”, AREA (L, B) <br>
-                            CALL VOLUME (L, B, H) <br>
-                            END <br>
-                            FUNCTION AREA (L, B) <br>
-                            AREA = L * B <br>
-                            END FUNCTION <br>
-
-                            SUB VOLUME (L, B, H) <br>
-                            V = L * B * H <br>
-                            PRINT “THE VOLUME OF ROOM IS: “, V <br>
-                            END SUB
-                        </p>
-                        <p class="ques">(d) Write a sequential data file called “Record.txt” has stored data under the
-                            field heading Roll No., Name, Gender, English, Nepali, Maths and Computer. Write a program
-                            to display all the information of those students whose gender is ‘F' and obtained marks in
-                            computer is more than 90.</p>
-                        <p class="program">Open "Record.txt" For Input As #1 <br>
-                            While Not EOF (1) <br>
-                            Input #1, R, Nm$, Gender$, a, b, c, d <br>
-                            If UCase$(Gender$) = “F” and d >= 90 Then <br>
-                            Print R, Nm$, Gender$, a, b, c, d <br>
-                            End If <br>
-                            Wend <br>
-                            Close #1
-                        </p>
-                        <p class="ques">(e) Write a program to display record stored on fields Roll, Name and Age of
-                            students on file “Info.dat”.</p>
-                        <p class="program">Open "Record.txt" For Input As #1 <br>
-                            While Not EOF (1) <br>
-                            Input #1, R, Nm$, a <br>
-                            Print R, Nm$, a <br>
-                            Wend <br>
-                            Close #1
-                        </p>
-                        <p class="ques">(f) Write a program in QBASIC to check whether input number is Palindrome of not
-                            using function procedure. </p>
-                        <p class="program">DECLARE FUNCTION PAL$(N) <br>
-                            CLS <br>
-                            INPUT “ENTER A NUMBER”, N <br>
-                            PAL$ (N) <br>
-                            END <br>
-
-                            FUNCTION PAL$(N) <br>
-                            ORG = N <br>
-                            WHILE N<>0 <br>
-                                R = N MOD 10 <br>
-                                P = P * 10 + R <br>
-                                N = N \ 10 <br>
-                                WEND <br>
-                                IF ORG = P THEN <br>
-                                PAL$ = “THE NUMBER IS PALINDROME” <br>
-                                ELSE <br>
-                                PAL$ = “THE NUMBER IS NOT PALINDROME” <br>
-                                END IF <br>
-                                END FUNCTION
-
-                        </p>
-                    </div>
-                </article>
-
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4><a href="QB.html">B. CLICK FOR MORE ABOUT QBASIC </a> </h4>
-                    </div>
-                </article>
             </div>
             <!-- Tab Two -->
-            <input type="radio" name="box" id="box2">
-            <label for="box2">Chapter 1</label>
+            <input type="radio" name="box" id="box4">
+            <label for="box4">PABSON-78 B</label>
             <div class="content">
-                <h3 class="cont">Computer Network and Internet </h3>
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4 class="cont">A. Summary </h4>
-                        <p>1) The process of sending and receiving data and information between two or more than two
-                            person is
-                            known as communication. </p>
-                        <p>2) Telecommunication is a system of transmission of sounds, images, texts or data in the
-                            form
-                            of
-                            electronic signals. </p>
-                        <p>3) A communication or transmission medium is a channel through which data or signals can
-                            be
-                            transmitted from one point to another. </p>
-                        <p>4) Simplex mode is transmission of data or information that can take place in only one
-                            direction.
-                        </p>
-                        <p>5) The five basic components (data, sender, medium, receiver and protocol) are required
-                            to
-                            make data
-                            communication. </p>
-                        <p>6) Twisted pair wire is made up of copper and a pair of wires are twisted together and
-                            insulated with
-                            plastic. </p>
-                        <p>7) Co-axial cable is made up of copper or aluminium wire with an inner conductor
-                            surrounded
-                            by
-                            insulating layer and again surrounded by conducting shield. </p>
-                        <p>8) Fiber optic cable uses light wave to carry data signal from one end of cable to
-                            another
-                            end. </p>
-                        <p>9) Bandwidth refers to the volume of data that can be transmitted through the
-                            communication
-                            medium.
-                        </p>
-                        <p>10) Nowadays, wireless technology is used in communication technology and uses radio
-                            signal
-                            for
-                            receiving and transmitting electronic data. </p>
-                        <p>11) In Nepal, radio wave transmission is used in rural
-                            and hilly areas. </p>
-                        <p>12) Microwave is high frequency wave which is used to
-                            transfer signals through atmosphere. </p>
-                        <p>13) Text, photo, video, etc. can be transferred
-                            worldwide by using satellite communication. </p>
-                        <p>14) Computer network is two or more than two computers
-                            connected to each other through wire or
-                            wireless media to share data or information, hardware,
-                            software and other resources. </p>
-                        <p>15) The hardware used in network are computer set,
-                            modem, hub, NIC card, bridge, repeater, etc. </p>
-                        <p>16) NIC card provides a port on the back of system unit
-                            to connect a computer in network. </p>
-                        <p>17) The different types of connectors are RJ- 45
-                            connector, BNC connector and ST connector. </p>
-                        <p>18) Network software is important software which
-                            controls and manages computer network.</p>
-                        <p>19) A set of rules followed for interconnection and
-                            communication between computers in a network is
-                            called protocol.</p>
-                        <p>20) Networks can be organized into three different
-                            models. They are: i. Centralized computing ii.
-                            Client/Server iii. Peer-to-peer.</p>
-                        <p>21) A server is the main computer that provides
-                            services, data and other resources to the other
-                            computers in the network environment.</p>
-                        <p>22) The main three types of computer network are LAN
-                            (Local Area Network), MAN (Metropolitan Area
-                            Network) and WAN (Wide Area Network).</p>
-                        <p>23) Network architecture defines how the computer
-                            communicates and interacts with each other on
-                            network. </p>
-                        <p>24) The arrangement or connection pattern of computers
-                            or nodes and other devices of a network is a
-                            known as network topology.</p>
-                        <p>25) Network topology is the inter-connected pattern of
-                            network components.</p>
-                        <p>26) The worldwide connection of computer networks and that uses TCP/IP protocols to
-                            communicate with
-                            one another using wire or wireless media as well as network devices is called Internet.
-                        </p>
-                        <p>27) The main Internet services are IRC, search engine, FTP, Telnet, E-Commerce, etc. </p>
-                        <p>28) Network Interface Card (NIC) is a hardware device that connects two different nodes
-                            physically.
-                        </p>
-                        <p>29) A hub is a device with multiple points or ports. It acts as a central point for
-                            different
-                            computers and other devices. </p>
-                        <p>30) Software is the major component to create a network environment to share data and
-                            other
-                            resources.</p><br>
-                    </div>
-                </article>
+                <h3 class="cont">PABSON BORAD EXAMINATION 2078 SET B</h3>
 
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4>B. Write the technical word or phrases of following statements. </h4>
-                        <p>(a) Sending and receiving messages electronically through the Internet. <em
-                                class="red">Messanger </em>
-                        </p>
-                        <p>(b) Law that governs the legal issues of cyberspace.
-                            <em class="red"> Cyber-Law/ Cyber-Ethics</em>
-                        </p>
-                        <p>(c) Buying and selling of goods, products, or services over the Internet.
-                            <em class="red"> E-Commerce</em>
-                        </p>
-                        <p>(d) The smallest unit to represent information on quantum computer.
-                            <em class="red"> A quantum bit or qubit </em>
-                        </p>
-                        <p>(e) The websites that search documents for specified keywords in WWW.
-                            <em class="red"> Search Engines</em>
-                        </p>
-                        <p>(f) The skilled computer expert who uses technical knowledge to overcome a problem.
-                            <em class="red"> Hacker</em>
-                        </p>
-                        <p>(g) The process of identifying an individual usually based on a username and password.
-                            <em class="red"> Authentication</em>
-                        </p>
-                        <p>(h) The network security systems that monitor and control the traffic flow.
-                            <em class="red"> Firewall.</em>
-                        </p>
-                        <p>(i) The technology to encode file or message
-                            <em class="red"> encoding</em>
-                        </p>
-                    </div>
-                </article>
             </div>
 
             <!-- Tab Three -->
 
 
             <!-- tab Four -->
-            <input type="radio" name="box" id="box4">
-            <label for="box4">QBASIC</label>
+            <input type="radio" name="box" id="box5">
+            <label for="box5">PABSON-78 C</label>
             <div class="content">
-                <h3 class="cont">QBASIC Programming Theory</h3>
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4 class="cont">Modular Programming - Theory (One-mark Questions) </h4>
-                        <p class="ques">1. What is QBASIC? </p>
-                        <P>Ans: A modular programming language, where program is divided in different modules or
-                            functions is called QBASIC.</P>
-                        <p class="ques">2. What is syntax?</p>
-                        <p>Ans: The rule and grammar followed while writing statements, functions and variables
-                            in
-                            any
-                            programming language is called syntax.</p>
-                        <p class="ques">3. Define variable and constant.</p>
-                        <p>Ans: A location in the memory, contents of which can be changed during program
-                            execution
-                            is
-                            called Variable.</p>
-                        <p>A symbol whose value does not change during program execution is called Constant .
-                        </p>
-                        <p class="ques">4. What is operator?</p>
-                        <p>Ans: Symbols, which are used for mathematical calculations, logical and string
-                            operations
-                            is
-                            called operator.</p>
-                        <p class="ques">5. What is relational operator?</p>
-                        <p>Ans: Relational operator is symbol, which are used in relational or logical
-                            expressions.
-                        <p class="ques">6. What is Logical operator?</p>
-                        <p>Ans: Logical operators are symbols, which are used to combine two or more logical or
-                            relational expressions and return a single true or false value.</p>
-                        <p class="ques">7. What is looping?</p>
-                        <p>Ans: A control structure that executes the same program statement or block of program
-                            statements repeatedly for specified number of times or till the given condition is
-                            satisfied
-                            is called Looping.</p>
-                        <p class="ques">8. What is nested loop?</p>
-                        <p>Ans: A loop within another loop is called nested loop.
-                        <p class="ques">9. What is infinite loop
-                        <p>Ans: Never terminating loop is called infinite loop.</p>
-                        <p class="ques">10. What is array?</p>
-                        <p>Ans: A collection of the data of similar type, all of which are referred by a single
-                            variable name with different subscripts is called array.</p>
-                        <p class="ques">11. Define user defined functions.</p>
-                        <p>Ans: The function which is written and stored by the programmer to do the specific
-                            task
-                            is
-                            called user defined functions. The programmer defines this type of function, if
-                            QBASIC
-                            does
-                            not provide a built-in function to solve any problem required by the programmer.
-                            FUNCTION -
-                            END FUNCTION statement can be used to define a user defined function.
-                            Example: DECLARE FUNCTION SUM (NUM1,NUM2) .</p>
-                        <p class="ques">12. Define built-in or Library Functions.</p>
-                        <p>Ans: The functions provided by the QBASIC system is called built in or library
-                            functions.
-                            They allow the programmer to use them according to the requirement. Built in
-                            functions
-                            require to be called by the programmer to use them in a program. Example: LEN, MID$
-                            etc.
-                        </p>
-                        <p class="ques">13. Define modular Programming.</p>
-                        <p>Ans: An approach in which the program is divided into separate independent units,
-                            called
-                            modules to perform specific task is called modular programming.</p>
-                        <p class="ques">14. Mention any two advantages of modular programming.</p>
-                        <p>Ans: (i) Reducing redundancy of code (Code re-usability)
-                            (ii) Saving time during project development</p>
-                        <p class="ques">15. Why QBASIC is called modular programming language?</p>
-                        <p>Ans: QBASIC is called modular programming language because it allows the user to
-                            divide
-                            program into manageable and functional modules or blocks with the help of sub
-                            procedure
-                            and
-                            function procedure.</p>
-                        <p class="ques">16. Define Main module.</p>
-                        <p>Ans: The top level module is called main module, which is located at the top of all
-                            procedures such as sub procedures or function procedure. It is the entry point of
-                            modular
-                            programming. Procedure name and parameters are declared and called from the main
-                            module.
-                        <p class="ques">17. Define Sub Procedure.</p>
-                        <p>Ans: A small manageable and functional part of a program that performs specific tasks
-                            and
-                            does not return any value to the calling module is called Sub procedure.</p>
-                        <p class="ques">18. What is the use of CALL statement.</p>
-                        <p>Ans: The CALL statement transfers the control to sub procedure and statement in the
-                            sub
-                            procedure execute. It is used to call or execute a sub procedure from the main
-                            module.
-                        <p class="ques">19. Define arguments.</p>
-                        <p>Ans: The constant or variables enclosed in the parenthesis of procedure call
-                            statement
-                            and
-                            that are supplied to a procedure are called arguments. It is also known as actual
-                            parameter.
-                            The argument can be passed to a procedure either by reference or by the value
-                            method.
-                        </p>
-                        <p class="ques">20. Define parameters.</p>
-                        <p>Ans: Variables in sub module or a procedure declaration which accept data or
-                            variables
-                            passed to them from the calling module are called parameters. It is also known as
-                            formal
-                            parameter.</p>
-                        <p class="ques">21. Define Local Variable.</p>
-                        <p>Ans: A variable which is defined in a module and is not accessible to any other
-                            modules
-                            is
-                            called local variable. It is only accessible to the module where it is defined.
-                            Value of
-                            local variable is destroyed when execution of module is over.</p>
-                        <p class="ques">22. Define Global Variable.</p>
-                        <p>Ans: A variable in main module which can be accessed from any modules or procedure of
-                            a
-                            program is called global variable. Variable can be made global declaring them with
-                            DIM
-                            SHARED or COMMON SHARED or SHARED attribute.</p>
-                        <p class="ques">23. Write about Passing argument by reference.</p>
-                        <p>Ans: Arguments are normally passed to a sub program by reference, which gives the
-                            procedure
-                            access to the actual variable. In this method, the address of each variable is
-                            passed to
-                            the
-                            procedure. The changes made in the procedure's variable they will make change in the
-                            value
-                            of arguments. It is the default mode of passing arguments in QBASIC. Example: CALL
-                            TEST
-                            (A,B)</p>
-                        <p class="ques">24. Write about Passing argument by value.</p>
-                        <p>Ans: Argument passed by the value method does not make any effect to value of the
-                            variables
-                            which are passed to a procedure even they are changed in the procedure. When
-                            arguments
-                            are
-                            passed by value method, it makes a duplicate copy of arguments and their values are
-                            used
-                            directly in the parameters. The changes made in the procedure's variable they does
-                            not
-                            make
-                            any change in the value of arguments. To pass argument by value method each argument
-                            is
-                            enclosed in individual parentheses in the calling statement. Example: CALL TEST (
-                            (A) ,
-                            (B)
-                            )</p>
-                        <p class="ques">25. Define procedure.</p>
-                        <p>Ans: A collection of code which perform an action is called procedure.</p>
-                        <p class="ques">26. Mention the types of procedure.</p>
-                        <p>Ans: (i) Sub procedure (ii) Function procedure</p>
-                        <p class="ques">27. List any two advantages of procedure.</p>
-                        <p>Ans: (i) It divides big program into small manageable module , makes easy to debug.
-                            (ii) It reduces the program codes because a single module can be used in different
-                            places.
-                        </p>
-                        <p class="ques">28. Differentiate between Function and Sub procedure.</p>
-                        <p>Ans:</p>
-                        <p> Function Procedure
-                            (i) It returns value. (ii) It does not use call statement. </p>
-                        <p> Sub Procedures (i) It does not return value.
-                            (ii) It uses call statement.</p>
+                <h3 class="cont">PABSON BORAD EXAMINATION 2078 SET C</h3>
 
-                    </div>
-                </article>
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4><a href="QB.html">B. CLICK FOR MORE ABOUT QBASIC </a> </h4>
-                    </div>
-                </article>
             </div>
             <!-- Tab five -->
-            <input type="radio" name="box" id="box5">
-            <label for="box5">C Language</label>
+            <input type="radio" name="box" id="box6">
+            <label for="box6">N-PABSON-78</label>
             <div class="content">
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4><a href="C Language.html"> C Programming Language </a></h4>
-                    </div>
-                </article>
-                <article class="faq">
-                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                    <div class="question__answer">
-                        <h4><a href="QB.html">B. CLICK FOR MORE ABOUT QBASIC </a> </h4>
-                    </div>
-                </article>
+
             </div>
         </div>
     </div>
