@@ -1143,173 +1143,309 @@
                         </p>
                     </div>
                 </article>
-                <!-- <article class="faq">
+            </div>
+            <!-- tab Four -->
+            <input type="radio" name="box" id="box5">
+            <label for="box5">Pre-Test</label>
+            <div class="content">
+                <h3 class="cont">Most Important and Probable SET</h3>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-                        <h4>5. Write down the output of the given program. Show with dry run-in table. [2]
-                        </h4>
-                        <p class="program">DECLARE SUB DISPLAY(A)
-                            <br> &nbsp;CLS
-                            <br> &nbsp;A=3
-                            <br> &nbsp;CALL DISPLAY(A)
-                            <br> END
-                            <br> SUB DISPLAY(A)
-                            <br> &nbsp; FOR X = 1 TO 6
-                            <br> &nbsp; &nbsp;PRINT A;
-                            <br> &nbsp; &nbsp;IF A MOD 2 =0 THEN
-                            <br> &nbsp; &nbsp;&nbsp;A = A / 2
-                            <br> &nbsp; &nbsp;ELSE
-                            <br> &nbsp; &nbsp;&nbsp;A = (A*3)+1
-                            <br> &nbsp; &nbsp;END IF
-                            <br> &nbsp; NEXT X
-                            <br> END SUB
+                        <h3 class="cont">Group A</h3>
+                        <h4>1. Answer the following questions in one sentence: [6 x 1 = 6]</h4>
+                        <p class="ques">(a) Write down any two Network Communication Protocols. </p>
+                        <p>The two Network Communication Protocols are:
+                            <br> 1. TCP (Transmission Control Protocol)
+                            <br> 2. UDP (User Datagram Protocol)
                         </p>
-                        <p><img src="images/seepab-A.JPG" alt=""></p>
+                        <p class="ques">(b) How is virus removed from computer system?</p>
+                        <p>Some methods for removing viruses from a computer system are:
+                            <br> 1. Use antivirus software
+                            <br> 2. Use a malware removal tool
+                        </p>
+                        <p class="ques">(c) Name any two examples of M-Commerce.</p>
+                        <p>Two examples of m-commerce (mobile commerce) are:
+                            <br> 1. Mobile banking/ Mobile payment:
+                            <br> 2. Online shopping
+                        </p>
+                        <p class="ques">(d) What is the storage size of memo and text data type in MS-Access? </p>
+                        <p>In Microsoft Access, the storage size of the Memo data type is up to 1 gigabyte (GB) per
+                            field where text data type has up to 255 characters.</p>
+                        <p class="ques">(e) What do you mean by local variable?</p>
+                        <p>A local variable is a variable that is declared and used within a specific block of code,
+                            such as within a function or loop and accessible from outside of that block.</p>
+                        <p class="ques">(f) What is an operator in C language?</p>
+                        <p>In the C programming language, an operator is special symbol that performs a specific
+                            operation on one or more operands.</p>
                     </div>
                 </article>
                 <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-                        <h3 class="cont">Group B</h3> -->
-                <!-- <h4>6. Re-write the given program after correcting the bugs. [2]</h4>
-                        <p class="program">REM to add more data in a sequential data file
-                            <br> OPEN “EMP.DAT” FOR INPUT AS #2
-                            <br> &nbsp;DO
-                            <br> &nbsp; &nbsp; INPUT “ENTER NAME”; N$
-                            <br> &nbsp; &nbsp; INPUT “ENTER ADDRESS”; A$
-                            <br> &nbsp; &nbsp; INPUT “ENTER SALARY”; S$
-                            <br> &nbsp; &nbsp; WRITE #1, N$, A$, S
-                            <br> &nbsp; &nbsp; INPUT “Do you want to add more record”; M$
-                            <br> &nbsp;LOOP WHILE UCASE(M$)= “Y”
-                            <br> END
-                        </p>
-                        <p><b><u>Corrected Program:</u></b></p>
-                        <p class="program">OPEN "EMP.DAT" FOR <b>APPEND</b> AS #2
-                            <br> DO
-                            <br>&nbsp; INPUT "ENTER NAME"; N$
-                            <br>&nbsp; INPUT "ENTER ADDRESS"; A$
-                            <br>&nbsp; INPUT "ENTER SALARY"; <b>S</b>
-                            <br>&nbsp; WRITE <b>#2</b>, N$, A$, S
-                            <br>&nbsp; INPUT "DO YOU WANT TO ADD MORE RECORD"; M$
-                            <br>LOOP WHILE <b>UCASE$</b>(M$) = "Y"
-                            <br> END
-                        </p>
+                        <!-- <h3 class="cont">Group A</h3> -->
+                        <h4>2. Write appropriate technical term for the following: [1 + 1 = 2]</h4>
+                        <p class="ques">(a) Business through Internet</p>
+                        <p>E-COMMERCE </p>
+                        <p class="ques">(b) The smallest unit to represent information on quantum computer</p>
+                        <p>QUANTUM BIT, OR QUBIT</p>
                     </div>
-                </article> -->
-                <!-- <article class="faq">
+                </article>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-                       
-                        <h4>7. Study the following program and answer the given questions: [1+1]</h4>
-                        <p class="program">DECLARE FUNCTION text$(A$)
-                            <br> &nbsp;CLS
-                            <br> &nbsp;INPUT “ENTER ANY WORD”; T$
-                            <br> &nbsp;PRINT text$(T$)
-                            <br> END
-
-                            <br> FUNCTION text$(A$)
-                            <br> &nbsp;FOR M = LEN(A$) TO 1 STEP -1
-                            <br> &nbsp;&nbsp;C$=C$+MID$(A$,M,1)
-                            <br> &nbsp;NEXT M
-                            <br> &nbsp;text$ = C$
-                            <br> END FUNCTION
-                        </p>
-                        <p><b>(a) List the formal and actual parameters used in the program given above.</b><br>
-                            Formal parameters: A$ <br> Actual parameters:T$
-                        </p>
-                        <p><b>(b) List the library function used in the above program.</b><br>
-                            The library function used are: LEN(), MID$() and FOR LOOP functions. </p>
+                        <!-- <h3 class="cont">Group A</h3> -->
+                        <h4>3. Write the full form of the following: [1 + 1 = 2]</h4>
+                        <p class="ques"><b>(i) G2G :</b> Government to Government</p>
+                        <p class="ques"> <b>(ii) FTP :</b> File Transfer Protocol</p>
                     </div>
-                </article> -->
-                <!-- <article class="faq"> -->
-                <!-- <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h3 class="cont">Group B</h3>
+                        <h4>4. Answer the following questions: [9 x 2 = 18]</h4>
+                        <p class="ques">(a) Define Network. And write down its any two disadvantages.</p>
+                        <p>A computer network is a group of computers and other devices that are connected together
+                            to share resources and exchange information.
+                            <br> Disadvantages of computer networks:
+                            <br> i) Security risks
+                            <br> ii) Cost
+                            <br> iii) Complexity etc.
+                        </p>
+                        <p class="ques">(b) What does Security threat mean? Write its any four types.</p>
+                        <p>A security threat is a potential danger or vulnerability that could compromise the
+                            security of a system or network.
+                            <br> Four common types of security threats are:
+                            <br> 1. Phishing
+                            <br> 2. Ransomware
+                            <br> 3. Malware
+                            <br> 4. Denial of serve (DoS) attacks
+                        </p>
+                        <p class="ques">(c) Define Artificial Intelligence with examples.</p>
+                        <p>Artificial intelligence (AI) refers to the development and use of computer systems that
+                            are able to perform tasks that normally require human intelligence, such as learning,
+                            problem-solving, decision-making, and communication. Examples: Image and Facial
+                            recognition, Voice recognition, Natural language processing etc. </p>
+
+                        <p class="ques">(d) Differentiate between Server and Workstation. </p>
+                        <p>A server is a computer that is designed to provide services to other computers or devices
+                            on a network. Servers are typically more powerful than workstations.
+                            <br> A workstation is a computer that is designed for use by a single user and is
+                            typically
+                            used for tasks such as data analysis, video editing, or scientific simulations.
+                        </p>
+                        <p class="ques">(e) What is Power Protection Device? What role does it play in the Computer
+                            Security?</p>
+                        <p>A power protection device is a device that is used to protect electronic equipment, such
+                            as computers, from power surges, voltage spikes, and other power-related issues. E.g.
+                            surge protectors or uninterruptible power supplies (UPS).</p>
+
+                        <p class="ques">(f) Define DBMS. Write any two examples of DBMS.</p>
+                        <p>A database management system (DBMS) is a software application that is used to create,
+                            manage,
+                            and interact with databases. Examples: MS-Access, MySQL etc.</p>
+
+                        <p class="ques">(g) What does MS-Access refer? Write down its any two advantages. </p>
+                        <p>Microsoft Access (Access) is a database management system (DBMS) that is used to store,
+                            manage, and retrieve data in a database.
+                            <br> Two advantages: <br> i) it is easy to use and handle data
+                            <br> ii) Customizability
+                        </p>
+                        <p class="ques">(h) Write down any two major differences between form and reports.</p>
+                        <p>Forms are used to input, edit, and view data in a database, while reports are used to
+                            present and analyze data.
+                            Forms are often used to create a user-friendly interface for working with data, while
+                            reports are used to summarize and present data in a specific format, such as for
+                            printing or sharing with others.
+                        </p>
+                        <p class="ques">(i) What is meant by field property? Write any two names of field property.
+                        </p>
+                        <p>In a database management system, a field property is a characteristic or attribute of a
+                            field, which is a unit of data within a database. <br> Some field properties are:
+                            <br> 1. Data type
+                            <br> 2. Required
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <h4>5. Write down the output of the given program. Show with dry run-in table. [2]
+                        </h4>
+                        <p class="program">DECLARE SUB SERIES(N)
+                            CLS
+                            FOR I = 1 TO 5
+                            READ N
+                            CALL SERIES (N)
+                            NEXT I
+                            DATA 125, 1000, 216, 8, 27
+                            END
+
+                            SUB SERIES(N)
+                            PRINT N^1/3 + 1
+                            END SUB
+                        </p>
+                        <p><img src="images/seepre.JPG" alt=""></p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>6. Re-write the given program after correcting the bugs. [2]</h4>
+                        <p class="program">REM to check input string is Palindrome string or not.
+                            <br> DECLARE SUB CHECK(S$)
+                            <br> INPUT “Enter a string:::”, S$
+                            <br> CALL CHECK(W$)
+                            <br> END
+                            <br> SUB CHECK(S$)
+                            <br> FOR K = 1 TO LEN(S$)
+                            <br> A$ = MID$(N$, 1, K)
+                            <br> W$ = W$ + A$
+                            <br> NEXT K
+                            <br> IF UCASE$(W$) = UCASE$(S$)THEN
+                            <br> PRINT “Not Palindrome”
+                            <br> ELSE
+                            <br> PRINT “Palindrome”
+                            <br> END IF
+                            <br> SUB END
+                        </p>
+                        <p><b><u>Corrected Program:</u></b></p>
+                        <p class="program">DECLARE SUB CHECK(S$)
+                            <br> INPUT “Enter a string:::”, S$
+                            <br> CALL CHECK(S$)
+                            <br> END
+                            <br> SUB CHECK(S$)
+                            <br> FOR K = 1 TO LEN(S$)
+                            <br> A$ = MID$(S$, K,1)
+                            <br> W$ = A$ + W$
+                            <br> NEXT K
+                            <br> IF UCASE$(W$) = UCASE$(S$) THEN
+                            <br> PRINT “Palindrome”
+                            <br> ELSE
+                            <br> PRINT “Not Palindrome”
+                            <br> END IF
+                            <br> SUB END
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                    <div class="question__answer">
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>7. Study the following program and answer the given questions: [1+1]</h4>
+                        <p class="program">DECLARE SUB result(m$)
+                            <br> m$ = “KATHMANDU”
+                            <br> END
+                            <br> SUB result(m$)
+                            <br> C = LEN(m$)
+                            <br> B = 1
+                            <br> WHILE B &lt;= C <br> PRINT MID$(m$, B, 1)
+                            <br> B = B + 2
+                            <br> WEND
+                            <br> END SUB
+                        </p>
+                        <p><b>What is missing in the above program?</b><br>
+                            CALL statement is missing in the above program.
+                        </p>
+                        <p><b>(b) List out the numeric and string variable in the program above.</b><br>
+                            <br> Numeric variables: B, C
+                            <br> String variables: m$
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
+                    <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
                         <h3 class="cont">Group C</h3>
                         <h4>8. Convert / Calculate as per the instruction: [4 x 1 = 4]</h4>
 
                     </div>
-                </article> --> -->
-                <!-- <article class="faq">
+                </article>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
                         <!-- <h3 class="cont">Group B</h3> -->
-                <!-- <h4>9. (a) Write a program in QBASIC that asks length, breadth and height of room and calculates
-                            its area and volume. Create a user-defined function to calculate area and sub-program to
-                            calculate volume. [4]</h4>
-                        <p class="program">REM program to calculate area of a circle and volume of a cylinder.
-                            <br> DECLARE FUNCTION AREA()
-                            <br> DECLARE SUB VOLUME()
-                            <br>&nbsp; CLS
-                            <br>&nbsp; AR= AREA
-                            <br>&nbsp; PRINT "The area of a Cylinder is", AR
-                            <br>&nbsp; CALL VOLUME
+                        <h4>9. (a) 9. Write a program in QBASIC that asks radius and height and calculate Volume of
+                            Cylinder and Volume of Cone. Create a USER DEFINED FUNCTION to calculate Volume of
+                            Cylinder and SUB-PROGRAM to calculate Volume of Cone. [hint: VOC=pi R2 and VOCN=
+                            1/3piR2H] [4]</h4>
+                        <p class="program">REM program to calculate VOLUME of a cylinder and volume of a cone.
+                            <br> DECLARE FUNCTION VOC()
+                            <br> DECLARE SUB VOCN()
+                            <br> CLS
+                            <br> V= VOC
+                            <br> PRINT "The VOLUME of a Cylinder is", V
+                            <br> CALL VOCN
                             <br> END
-
-                            <br> FUNCTION AREA ()
-                            <br>&nbsp; Input "enter radius of a circle", R
-                            <br>&nbsp; A = 22 / 7 * R * R
-                            <br>&nbsp; AREA = A
+                            <br>
+                            <br> FUNCTION VOC ()
+                            <br> Input "enter radius and height of a Cylinder", R,H
+                            <br> A = 22 / 7 * R * R *H
+                            <br> VOC = A
                             <br> END FUNCTION
-
-                            <br> SUB VOLUME ()
-                            <br>&nbsp; Input "Enter radius and height of a cylinder", R, H
-                            <br>&nbsp; V = 22 / 7 * R * R * H
-                            <br>&nbsp; PRINT "The volume of a room is", V
+                            <br>
+                            <br> SUB VOCN ()
+                            <br> Input "Enter radius and height of a Cone", R, H
+                            <br> V = 1 / 3 * 22 / 7 * R * R * H
+                            <br> PRINT "The volume of a Cone is", V
                             <br> END SUB
-                        </p> -->
-
-                <!-- </div>
-                </article> -->
-                <!-- <article class="faq">
+                        </p>
+                    </div>
+                </article>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-             
-                        <h4>10. A sequential data file “EMP.dat” contains employee’s name, address, gender and salary.
-                            WAP to display all the information of employees whose salary is more than Rs 20,000.</h4>
-                        <p class="program">REM “program to display all the information of employees whose salary is more
-                            than Rs 20,000”
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>10. A10. A sequential data file “Record.txt” contains information such as Name, Address,
+                            gender and Date of Birth of some students. WAP to display all the information of
+                            students whose Age is above 10 and Address is “KATHMANDU”. </h4>
+                        <p class="program">REM “program to display all the information of students whose age is more
+                            than Rs 10 and Address is “kathmandu”
                             <br> OPEN "Record.txt" FOR INPUT AS #1
-                            <br> WHILE NOT EOF(1)
-                            <br>&nbsp; INPUT #1, Name$, Address$, Gender$, Salary
-                            <br>&nbsp; IF Salary > 20000 THEN
-                            <br>&nbsp;&nbsp; PRINT "Name: "; Name$
-                            <br>&nbsp;&nbsp; PRINT "Address: "; Address$
-                            <br>&nbsp;&nbsp; PRINT "Gender: "; Gender$
-                            <br>&nbsp;&nbsp; PRINT "Salary: "; Salary
-                            <br>&nbsp; END IF
-                            <br> WEND
+                            <br> DO WHILE NOT EOF(1)
+                            <br> INPUT #1, name$, address$, gender$, dob$
+                            <br> age = 2022 - VAL(RIGHT$(dob$, 4))
+                            <br> IF age > 10 AND address$ = "KATHMANDU" THEN
+                            <br> PRINT "Name: "; name$
+                            <br> PRINT "Address: "; address$
+                            <br> PRINT "Gender: "; gender$
+                            <br> PRINT "Date of Birth: "; dob$
+                            <br> PRINT "Age: "; age
+                            <br> PRINT
+                            <br> END IF
+                            <br> LOOP
                             <br> CLOSE #1
                         </p>
                     </div>
-                </article> -->
-                <!-- <article class="faq">
+                </article>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-
-                        <h4>11. Write a program in C Language to input any two numbers and find greater number.</h4>
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>11. Write a program in C Language to display the series with their sum 3, 6, 9, 12
+                            upto 10th terms. </h4>
                         <p class="program">
                             /* C program to input any two numbers and find greater number */
                             <br>&nbsp; #include &lt;stdio.h>
                             <br>&nbsp; int main()
                             <br>&nbsp;&nbsp; {
-                            <br>&nbsp;&nbsp;&nbsp; int a, b;
-                            <br>&nbsp;&nbsp;&nbsp; printf(“Enter any two number”);
-                            <br>&nbsp;&nbsp;&nbsp; scanf(“%d, %d”, &a, &b);
-                            <br>&nbsp;&nbsp;&nbsp; if( a > b) {
-                            <br>&nbsp;&nbsp;&nbsp; &nbsp; printf(“ %d is the greater number”, a);
-                            <br>&nbsp;&nbsp;&nbsp; }
-                            <br>&nbsp;&nbsp;&nbsp; else {
-                            <br>&nbsp;&nbsp;&nbsp; &nbsp; printf(“ %d is the greater number”, b);
+                            <br>&nbsp;&nbsp;&nbsp; int a=1, b=3;
+                            <br>&nbsp;&nbsp;for(a=1;a&lt;=10;a++){
+                            <br>&nbsp;&nbsp;&nbsp; printf(“%d \t”, b);
+                            <br>&nbsp;&nbsp;&nbsp; b = b + 3;
                             <br>&nbsp;&nbsp;&nbsp; }
                             <br>&nbsp;&nbsp; }
                         </p>
                     </div>
-                </article> -->
-                <!-- <article class="faq">
+                </article>
+                <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-          
-                        <h4>11. OR Write a program in C Language that asks a number and check whether it is odd or even.
+                        <!-- <h3 class="cont">Group B</h3> -->
+                        <h4>11. OR Write a program in C Language that asks a number and check whether it is odd or
+                            even.
                         </h4>
                         <p class="program">/* C Program that asks a number and check whether it is odd or even*/
                             <br>&nbsp; #include &lt;stdio.h>
@@ -1331,453 +1467,125 @@
                         </p>
                     </div>
                 </article>
-            </div> -->
-
-                <!-- Tab Three -->
-
-
-                <!-- tab Four -->
-                <input type="radio" name="box" id="box5">
-                <label for="box5">Pre-Test</label>
-                <div class="content">
-                    <h3 class="cont">Most Important and Probable SET</h3>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <h3 class="cont">Group A</h3>
-                            <h4>1. Answer the following questions in one sentence: [6 x 1 = 6]</h4>
-                            <p class="ques">(a) Write down any two Network Communication Protocols. </p>
-                            <p>The two Network Communication Protocols are:
-                                <br> 1. TCP (Transmission Control Protocol)
-                                <br> 2. UDP (User Datagram Protocol)
-                            </p>
-                            <p class="ques">(b) How is virus removed from computer system?</p>
-                            <p>Some methods for removing viruses from a computer system are:
-                                <br> 1. Use antivirus software
-                                <br> 2. Use a malware removal tool
-                            </p>
-                            <p class="ques">(c) Name any two examples of M-Commerce.</p>
-                            <p>Two examples of m-commerce (mobile commerce) are:
-                                <br> 1. Mobile banking/ Mobile payment:
-                                <br> 2. Online shopping
-                            </p>
-                            <p class="ques">(d) What is the storage size of memo and text data type in MS-Access? </p>
-                            <p>In Microsoft Access, the storage size of the Memo data type is up to 1 gigabyte (GB) per
-                                field where text data type has up to 255 characters.</p>
-                            <p class="ques">(e) What do you mean by local variable?</p>
-                            <p>A local variable is a variable that is declared and used within a specific block of code,
-                                such as within a function or loop and accessible from outside of that block.</p>
-                            <p class="ques">(f) What is an operator in C language?</p>
-                            <p>In the C programming language, an operator is special symbol that performs a specific
-                                operation on one or more operands.</p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group A</h3> -->
-                            <h4>2. Write appropriate technical term for the following: [1 + 1 = 2]</h4>
-                            <p class="ques">(a) Business through Internet</p>
-                            <p>E-COMMERCE </p>
-                            <p class="ques">(b) The smallest unit to represent information on quantum computer</p>
-                            <p>QUANTUM BIT, OR QUBIT</p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group A</h3> -->
-                            <h4>3. Write the full form of the following: [1 + 1 = 2]</h4>
-                            <p class="ques"><b>(i) G2G :</b> Government to Government</p>
-                            <p class="ques"> <b>(ii) FTP :</b> File Transfer Protocol</p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <h3 class="cont">Group B</h3>
-                            <h4>4. Answer the following questions: [9 x 2 = 18]</h4>
-                            <p class="ques">(a) Define Network. And write down its any two disadvantages.</p>
-                            <p>A computer network is a group of computers and other devices that are connected together
-                                to share resources and exchange information.
-                                <br> Disadvantages of computer networks:
-                                <br> i) Security risks
-                                <br> ii) Cost
-                                <br> iii) Complexity etc.
-                            </p>
-                            <p class="ques">(b) What does Security threat mean? Write its any four types.</p>
-                            <p>A security threat is a potential danger or vulnerability that could compromise the
-                                security of a system or network.
-                                <br> Four common types of security threats are:
-                                <br> 1. Phishing
-                                <br> 2. Ransomware
-                                <br> 3. Malware
-                                <br> 4. Denial of serve (DoS) attacks
-                            </p>
-                            <p class="ques">(c) Define Artificial Intelligence with examples.</p>
-                            <p>Artificial intelligence (AI) refers to the development and use of computer systems that
-                                are able to perform tasks that normally require human intelligence, such as learning,
-                                problem-solving, decision-making, and communication. Examples: Image and Facial
-                                recognition, Voice recognition, Natural language processing etc. </p>
-
-                            <p class="ques">(d) Differentiate between Server and Workstation. </p>
-                            <p>A server is a computer that is designed to provide services to other computers or devices
-                                on a network. Servers are typically more powerful than workstations.
-                                <br> A workstation is a computer that is designed for use by a single user and is
-                                typically
-                                used for tasks such as data analysis, video editing, or scientific simulations.
-                            </p>
-                            <p class="ques">(e) What is Power Protection Device? What role does it play in the Computer
-                                Security?</p>
-                            <p>A power protection device is a device that is used to protect electronic equipment, such
-                                as computers, from power surges, voltage spikes, and other power-related issues. E.g.
-                                surge protectors or uninterruptible power supplies (UPS).</p>
-
-                            <p class="ques">(f) Define DBMS. Write any two examples of DBMS.</p>
-                            <p>A database management system (DBMS) is a software application that is used to create,
-                                manage,
-                                and interact with databases. Examples: MS-Access, MySQL etc.</p>
-
-                            <p class="ques">(g) What does MS-Access refer? Write down its any two advantages. </p>
-                            <p>Microsoft Access (Access) is a database management system (DBMS) that is used to store,
-                                manage, and retrieve data in a database.
-                                <br> Two advantages: <br> i) it is easy to use and handle data
-                                <br> ii) Customizability
-                            </p>
-                            <p class="ques">(h) Write down any two major differences between form and reports.</p>
-                            <p>Forms are used to input, edit, and view data in a database, while reports are used to
-                                present and analyze data.
-                                Forms are often used to create a user-friendly interface for working with data, while
-                                reports are used to summarize and present data in a specific format, such as for
-                                printing or sharing with others.
-                            </p>
-                            <p class="ques">(i) What is meant by field property? Write any two names of field property.
-                            </p>
-                            <p>In a database management system, a field property is a characteristic or attribute of a
-                                field, which is a unit of data within a database. <br> Some field properties are:
-                                <br> 1. Data type
-                                <br> 2. Required
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <h4>5. Write down the output of the given program. Show with dry run-in table. [2]
-                            </h4>
-                            <p class="program">DECLARE SUB SERIES(N)
-                                CLS
-                                FOR I = 1 TO 5
-                                READ N
-                                CALL SERIES (N)
-                                NEXT I
-                                DATA 125, 1000, 216, 8, 27
-                                END
-
-                                SUB SERIES(N)
-                                PRINT N^1/3 + 1
-                                END SUB
-                            </p>
-                            <p><img src="images/seepre.JPG" alt=""></p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>6. Re-write the given program after correcting the bugs. [2]</h4>
-                            <p class="program">REM to check input string is Palindrome string or not.
-                                <br> DECLARE SUB CHECK(S$)
-                                <br> INPUT “Enter a string:::”, S$
-                                <br> CALL CHECK(W$)
-                                <br> END
-                                <br> SUB CHECK(S$)
-                                <br> FOR K = 1 TO LEN(S$)
-                                <br> A$ = MID$(N$, 1, K)
-                                <br> W$ = W$ + A$
-                                <br> NEXT K
-                                <br> IF UCASE$(W$) = UCASE$(S$)THEN
-                                <br> PRINT “Not Palindrome”
-                                <br> ELSE
-                                <br> PRINT “Palindrome”
-                                <br> END IF
-                                <br> SUB END
-                            </p>
-                            <p><b><u>Corrected Program:</u></b></p>
-                            <p class="program">DECLARE SUB CHECK(S$)
-                                <br> INPUT “Enter a string:::”, S$
-                                <br> CALL CHECK(S$)
-                                <br> END
-                                <br> SUB CHECK(S$)
-                                <br> FOR K = 1 TO LEN(S$)
-                                <br> A$ = MID$(S$, K,1)
-                                <br> W$ = A$ + W$
-                                <br> NEXT K
-                                <br> IF UCASE$(W$) = UCASE$(S$) THEN
-                                <br> PRINT “Palindrome”
-                                <br> ELSE
-                                <br> PRINT “Not Palindrome”
-                                <br> END IF
-                                <br> SUB END
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>7. Study the following program and answer the given questions: [1+1]</h4>
-                            <p class="program">DECLARE SUB result(m$)
-                                <br> m$ = “KATHMANDU”
-                                <br> END
-                                <br> SUB result(m$)
-                                <br> C = LEN(m$)
-                                <br> B = 1
-                                <br> WHILE B &lt;= C <br> PRINT MID$(m$, B, 1)
-                                <br> B = B + 2
-                                <br> WEND
-                                <br> END SUB
-                            </p>
-                            <p><b>What is missing in the above program?</b><br>
-                                CALL statement is missing in the above program.
-                            </p>
-                            <p><b>(b) List out the numeric and string variable in the program above.</b><br>
-                                <br> Numeric variables: B, C
-                                <br> String variables: m$
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <h3 class="cont">Group C</h3>
-                            <h4>8. Convert / Calculate as per the instruction: [4 x 1 = 4]</h4>
-
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>9. (a) 9. Write a program in QBASIC that asks radius and height and calculate Volume of
-                                Cylinder and Volume of Cone. Create a USER DEFINED FUNCTION to calculate Volume of
-                                Cylinder and SUB-PROGRAM to calculate Volume of Cone. [hint: VOC=pi R2 and VOCN=
-                                1/3piR2H] [4]</h4>
-                            <p class="program">REM program to calculate VOLUME of a cylinder and volume of a cone.
-                                <br> DECLARE FUNCTION VOC()
-                                <br> DECLARE SUB VOCN()
-                                <br> CLS
-                                <br> V= VOC
-                                <br> PRINT "The VOLUME of a Cylinder is", V
-                                <br> CALL VOCN
-                                <br> END
-                                <br>
-                                <br> FUNCTION VOC ()
-                                <br> Input "enter radius and height of a Cylinder", R,H
-                                <br> A = 22 / 7 * R * R *H
-                                <br> VOC = A
-                                <br> END FUNCTION
-                                <br>
-                                <br> SUB VOCN ()
-                                <br> Input "Enter radius and height of a Cone", R, H
-                                <br> V = 1 / 3 * 22 / 7 * R * R * H
-                                <br> PRINT "The volume of a Cone is", V
-                                <br> END SUB
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>10. A10. A sequential data file “Record.txt” contains information such as Name, Address,
-                                gender and Date of Birth of some students. WAP to display all the information of
-                                students whose Age is above 10 and Address is “KATHMANDU”. </h4>
-                            <p class="program">REM “program to display all the information of students whose age is more
-                                than Rs 10 and Address is “kathmandu”
-                                <br> OPEN "Record.txt" FOR INPUT AS #1
-                                <br> DO WHILE NOT EOF(1)
-                                <br> INPUT #1, name$, address$, gender$, dob$
-                                <br> age = 2022 - VAL(RIGHT$(dob$, 4))
-                                <br> IF age > 10 AND address$ = "KATHMANDU" THEN
-                                <br> PRINT "Name: "; name$
-                                <br> PRINT "Address: "; address$
-                                <br> PRINT "Gender: "; gender$
-                                <br> PRINT "Date of Birth: "; dob$
-                                <br> PRINT "Age: "; age
-                                <br> PRINT
-                                <br> END IF
-                                <br> LOOP
-                                <br> CLOSE #1
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>11. Write a program in C Language to display the series with their sum 3, 6, 9, 12
-                                upto 10th terms. </h4>
-                            <p class="program">
-                                /* C program to input any two numbers and find greater number */
-                                <br>&nbsp; #include &lt;stdio.h>
-                                <br>&nbsp; int main()
-                                <br>&nbsp;&nbsp; {
-                                <br>&nbsp;&nbsp;&nbsp; int a=1, b=3;
-                                <br>&nbsp;&nbsp;for(a=1;a&lt;=10;a++){
-                                <br>&nbsp;&nbsp;&nbsp; printf(“%d \t”, b);
-                                <br>&nbsp;&nbsp;&nbsp; b = b + 3;
-                                <br>&nbsp;&nbsp;&nbsp; }
-                                <br>&nbsp;&nbsp; }
-                            </p>
-                        </div>
-                    </article>
-                    <article class="faq">
-                        <div class="faq__icon"><i class="uil uil-plus"></i></div>
-                        <div class="question__answer">
-                            <!-- <h3 class="cont">Group B</h3> -->
-                            <h4>11. OR Write a program in C Language that asks a number and check whether it is odd or
-                                even.
-                            </h4>
-                            <p class="program">/* C Program that asks a number and check whether it is odd or even*/
-                                <br>&nbsp; #include &lt;stdio.h>
-                                <br>&nbsp; int main()
-                                <br>&nbsp;&nbsp; {
-                                <br>&nbsp;&nbsp;&nbsp; int num;
-                                <br>&nbsp;&nbsp;&nbsp; printf("Enter a number: ");
-                                <br>&nbsp;&nbsp;&nbsp; scanf("%d", &num);
-                                <br>&nbsp;&nbsp;&nbsp; if (num % 2 == 0)
-                                <br>&nbsp;&nbsp;&nbsp; {
-                                <br>&nbsp;&nbsp;&nbsp; &nbsp; printf("The number is even.\n");
-                                <br>&nbsp;&nbsp;&nbsp; }
-                                <br>&nbsp;&nbsp;&nbsp; else
-                                <br>&nbsp;&nbsp;&nbsp; {
-                                <br>&nbsp;&nbsp;&nbsp; &nbsp; printf("The number is odd.\n");
-                                <br>&nbsp;&nbsp;&nbsp; }
-                                <br>&nbsp;&nbsp;&nbsp; return 0;
-                                <br>&nbsp;&nbsp; }
-                            </p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Tab five -->
-                <input type="radio" name="box" id="box6">
-                <label for="box6">N-PABSON-78</label>
-                <div class="content">
-
-                </div>
             </div>
 
+            <!-- Tab five -->
+            <input type="radio" name="box" id="box6">
+            <label for="box6">N-PABSON-78</label>
+            <div class="content">
+
+            </div>
+        </div>
 
 
-            <!--=====Achievements ====-->
 
-            <section class="about_achievement">
-                <div class="container about-achievement-container">
-                    <div class="about_achievement-left">
-                        <img src="./image/about achievements.svg" alt="">
-                    </div>
-                    <div class="about_achievements-right">
-                        <h1>Achievements</h1>
-                        <p>!</p>
-                        <div class="achievements_cards">
-                            <article class="achievement_card">
-                                <span class="achievement_icon">
-                                    <i class="uil uil-video"></i>
-                                </span>
-                                <h3>500+</h3>
-                                <p>Courses</p>
+        <!--=====Achievements ====-->
 
-                            </article>
+        <section class="about_achievement">
+            <div class="container about-achievement-container">
+                <div class="about_achievement-left">
+                    <img src="./image/about achievements.svg" alt="">
+                </div>
+                <div class="about_achievements-right">
+                    <h1>Achievements</h1>
+                    <p>!</p>
+                    <div class="achievements_cards">
+                        <article class="achievement_card">
+                            <span class="achievement_icon">
+                                <i class="uil uil-video"></i>
+                            </span>
+                            <h3>500+</h3>
+                            <p>Courses</p>
 
-                            <article class="achievement_card">
-                                <span class="achievement_icon">
-                                    <i class="uil uil-trophy"></i>
-                                </span>
-                                <h3>25+</h3>
-                                <p>Awards</p>
+                        </article>
 
-                            </article>
+                        <article class="achievement_card">
+                            <span class="achievement_icon">
+                                <i class="uil uil-trophy"></i>
+                            </span>
+                            <h3>25+</h3>
+                            <p>Awards</p>
 
-                            <article class="achievement_card">
-                                <span class="achievement_icon">
-                                    <i class="uil uil-users-alt"></i>
-                                </span>
-                                <h3>50,000+</h3>
-                                <p>Students</p>
-                            </article>
-                        </div>
+                        </article>
+
+                        <article class="achievement_card">
+                            <span class="achievement_icon">
+                                <i class="uil uil-users-alt"></i>
+                            </span>
+                            <h3>50,000+</h3>
+                            <p>Students</p>
+                        </article>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--=====END OF Achievements ====-->
+        <!--=====END OF Achievements ====-->
 
 
 
 
-            <!--===== FOOTERS section ====-->
-            <footer>
-                <div class="container footer_container">
-                    <div class="footer_1">
-                        <a href="index.html" class="footer_logo">
-                            <h4>ShareSkills</h4>
-                        </a>
-                        <p>Grow your Skills</p>
-                        <h5>Page Viewers:</h5>
-                        <h4 id="count">0</h4>
-                    </div>
-                    <div class="footer_2">
-                        <h4>Permalinks</h4>
-                        <ul class="permalinks">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="academic.html">ACADEMIC</a></li>
-                            <li><a href="Programming.html">PROGRAMMING</a></li>
-                            <li><a href="VIDEOS.html">VIDEOS</a></li>
-                            <li><a href="BCA.html">BCA</a></li>
-                            <li><a href="MCQ.html">MCQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_3">
-                        <h4>Privacy</h4>
-                        <ul class="privacy">
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Refund Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_4">
-                        <h4>Contact Us</h4>
-                        <div>
-                            <p>9841355367</p>
-                            <p>shareskillsguru@gmail.com</p>
-                        </div>
-
-                        <ul class="footer_socials">
-                            <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
-                            <li><a href="#"><i class="uil uil-twitter"></i></a></li>
-                            <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
-                        </ul>
-                    </div>
+        <!--===== FOOTERS section ====-->
+        <footer>
+            <div class="container footer_container">
+                <div class="footer_1">
+                    <a href="index.html" class="footer_logo">
+                        <h4>ShareSkills</h4>
+                    </a>
+                    <p>Grow your Skills</p>
+                    <h5>Page Viewers:</h5>
+                    <h4 id="count">0</h4>
                 </div>
-                <div class="footer_copyright">
-                    <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
+                <div class="footer_2">
+                    <h4>Permalinks</h4>
+                    <ul class="permalinks">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="academic.html">ACADEMIC</a></li>
+                        <li><a href="Programming.html">PROGRAMMING</a></li>
+                        <li><a href="VIDEOS.html">VIDEOS</a></li>
+                        <li><a href="BCA.html">BCA</a></li>
+                        <li><a href="MCQ.html">MCQ</a></li>
+                    </ul>
                 </div>
-            </footer>
-            <script>
-                const countE1 = document.getElementById("count");
-                countvisits();
-                function countvisits() {
-                    fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
-                        .then((res) => res.json())
-                        .then((res) => {
-                            countE1.innerHTML = res.value;
-                        });
-                } 
-            </script>
-            <script src="./main.js"></script>
+                <div class="footer_3">
+                    <h4>Privacy</h4>
+                    <ul class="privacy">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer_4">
+                    <h4>Contact Us</h4>
+                    <div>
+                        <p>9841355367</p>
+                        <p>shareskillsguru@gmail.com</p>
+                    </div>
+
+                    <ul class="footer_socials">
+                        <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                        <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
+            </div>
+        </footer>
+        <script>
+            const countE1 = document.getElementById("count");
+            countvisits();
+            function countvisits() {
+                fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
+                    .then((res) => res.json())
+                    .then((res) => {
+                        countE1.innerHTML = res.value;
+                    });
+            } 
+        </script>
+        <script src="./main.js"></script>
 </body>
 
 </html>
