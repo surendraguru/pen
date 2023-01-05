@@ -773,6 +773,21 @@ footer ul li a:hover {
 }
 
 /* Authors section end */
+.vaca {
+    font-size: 1.6em;
+    font-weight: bolder;
+    border-bottom: 5px solid red;
+    margin-bottom: 3rem;
+    border-right: 10px solid yellow;
+    border-left: yellow 5px solid;
+    border-top: 1px solid red;
+    margin: auto;
+    width: 350px;
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+}
+
 .conTitle {
     /* width: 400px; */
     font-size: 1.6em;
