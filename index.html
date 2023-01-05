@@ -1,271 +1,863 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords"
-        content="Self Paced Training, Self-paced, Study Park, study-park, Computer, Computer note, SharaSkills, Surendra, Surendra Prasad Tharu, C, c++, html, html tutorials, css, javascript, python">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>codeswithspt</title>
-    <!--ICONSCOUNT CDN link-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Google Fonts (Monteserrat)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,400;1,500&display=swap"
-        rel="stylesheet">
-    <!--SWIPERJS.COM-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-</head>
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #27075a;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
 
-<body>
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html">
-                <h4 class="loname">StudyPark</h4>
-            </a>
-            <ul class="nav__menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i></i>HOME</a></li>
-                <li><a href="academic.html"><i class="fa fa-graduation-cap"></i>ACADEMIC</a></li>
-                <li><a href="Programming.html"><i class="fa fa-file-code-o"></i>PROGRAMMING</a></li>
-                <li><a href="VIDEOS.html"><i class="fa fa-graduation-cap"></i>VIDEOS</a></li>
-                <li><a href="BCA.html"><i class="fa fa-paperclip"></i>BCA</a> </li>
-                <li><a href="evaluate.html"><i class="fa fa-paperclip"></i>MCQ</a> </li>
-                <li><a href="Virus.html"><i class="fa fa-paperclip"></i>Notes</a> </li>
-                <li><a href="projectwork.html"><i class="fa fa-paperclip"></i>Project</a> </li>
-            </ul>
-            <button id="open-menu-btn">Menu<i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn">Menu<i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-    <!--=====END OF NAVBAR====-->
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
 
-    <header>
-        <div class="watch">
-            <div class="quote">
-                <h2>Time is the most precious, utilize it properly.</h2>
-            </div>
-            <div class="datetime">
-                <div class="time"></div>
-                <div class="date"></div>
-            </div>
-        </div>
-        <div class="container header__container">
-            <div class="header__left">
-                <div class="title">
-                    <h1 id="h1">Grow your skills to advance your career path.</h1>
-                </div>
-                <div class="title">
-                    <h3 id="h3">All things are possible because anything can be learned.</h3>
-                </div>
-                <div>
+    --transition: all 400ms ease;
+}
 
-                    <a href="Programming.html" class="btn btn-primary">Get Started</a>
-                    <a href="#about-author" class="btn btn-primary">Contact</a>
-                </div>
-            </div>
-        </div>
-        <!-- </header> -->
-        <div class="content">
-            <!-- <div class="lang">Web Scripting</div> -->
-            <div class="menu3d">
-                <div>
-                    <ul class="list3d">
-                        <p class="conTitle">SEE / GRADE 10</p>
-                        <a href="SEE.html">
-                            <li style="--i:6;--clr:rgb(89, 4, 4);">SEE-chapter wise </li>
-                        </a>
-                        <a href="seeset.html">
-                            <li style="--i:5;--clr:rgb(4, 84, 111);">SEE-Sets </li>
-                        </a>
-                        <a href="QB.html">
-                            <li style="--i:4;--clr:purple;">QB-Modules </li>
-                        </a>
-                        <a href="#">
-                            <li style="--i:3;--clr:rgb(0, 11, 128);">QB-File handling </li>
-                        </a>
-                        <a href="C Language.html">
-                            <li style="--i:2;--clr:rgb(128, 0, 0);">C
-                                language </li>
-                        </a>
-                        <a href="VIDEOS.html">
-                            <li style="--i:1;--clr:rgb(65, 4, 65);">YouTube </li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu3d">
-                <ul class="list3d">
-                    <p class="conTitle">Winter Vaccation Work</p>
-                    <a href="">
-                        <li style="--i:6;--clr:rgb(52, 5, 99);">GRADE 8</li>
-                    </a>
-                    <a href="">
-                        <li style="--i:5;--clr:rgb(4, 84, 111);">GRADE 7</li>
-                    </a>
-                    <a href="">
-                        <li style="--i:4;--clr:rgb(40, 54, 3);">GRADE 6</li>
-                    </a>
-                    <a href="VIDEOS.html">
-                        <li style="--i:1;--clr:rgb(65, 4, 65);">YouTube</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!--=====END OF header section====-->
+.quote {
+    text-align: center;
+    color: greenyellow;
+    letter-spacing: 2px;
+    margin: 20px;
+}
 
-    <section class="Author" id="about-author">
-        <h2>Meet the Author/ Instructure/ Team</h2>
-        <div class="container team_container">
-            <article class="team">
-                <div class="team-image">
-                    <img src="./images/tm1.JPG" alt="">
-                </div>
-                <div class="team-info">
-                    <h4>Surendra Prasad Tharu (Badhai)</h4>
-                    <p>Solo Expert Tutor</p>
-                </div>
-                <div class="team-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
-                    <a href="https://linkedIn.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
-                </div>
-            </article>
-        </div>
-    </section>
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
 
-    <!-- achievement section -->
-    <section class="about_achievement">
-        <div class="container about-achievement-container">
-            <div class="about_achievement-left">
-                <img src="./image/about achievements.svg" alt="">
-            </div>
-            <div class="about_achievements-right">
-                <h1>Achievements</h1>
-                <p>To brand for free Education and share SkillS
-                <div class="achievements_cards">
-                    <article class="achievement_card">
-                        <span class="achievement_icon">
-                            <i class="uil uil-video"></i>
-                        </span>
-                        <h3>YouTube tutorials</h3>
-                        <p>Courses</p>
-                    </article>
-                    <article class="achievement_card">
-                        <span class="achievement_icon">
-                            <i class="uil uil-trophy"></i>
-                        </span>
-                        <h3>Self-Paced Time</h3>
-                        <p>Awards</p>
-                    </article>
-                    <article class="achievement_card">
-                        <span class="achievement_icon">
-                            <i class="uil uil-users-alt"></i>
-                        </span>
-                        <h3>50,000+</h3>
-                        <p>Students</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=====END OF Achievements ====-->
+.datetime {
+    font-size: 16px;
+    padding: 0.3rem 1rem;
+    color: #ffffff;
+    background: #0c0d0c;
+    box-shadow: 0 0 10px rgba(73, 67, 67, 0.25);
+    border-radius: 4px;
+    border-right: 20px #29e6fb solid;
+    width: auto;
+    font-family: sans-serif;
+    float: right;
+    margin-right: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+    justify-content: center;
+    align-items: center;
+}
 
-    <!--===== FOOTERS section ====-->
-    <footer>
-        <div class="container footer_container">
-            <div class="footer_1">
-                <a href="index.html" class="footer_logo">
-                    <h4>ShareSkills</h4>
-                </a>
-                <p>Grow your Skills</p>
-                <h5>Page Viewers:</h5>
-                <h4 id="count">0</h4>
-            </div>
-            <div class="footer_2">
-                <h4>Permalinks</h4>
-                <ul class="permalinks">
-                    <li class="active"><a href="index.html"><i class="fa fa-home"></i></i>HOME</a></li>
-                    <li><a href="academic.html"><i class="fa fa-graduation-cap"></i>ACADEMIC</a></li>
-                    <li><a href="Programming.html"><i class="fa fa-file-code-o"></i>PROGRAMMING</a></li>
-                    <li><a href="VIDEOS.html"><i class="fa fa-graduation-cap"></i>VIDEOS</a></li>
-                    <li><a href="BCA.html"><i class="fa fa-paperclip"></i>BCA</a> </li>
-                    <li><a href="evaluate.html"><i class="fa fa-paperclip"></i>MCQ</a> </li>
-                    <li><a href="Virus.html"><i class="fa fa-paperclip"></i>Notes</a> </li>
-                    <li><a href="projectwork.html"><i class="fa fa-paperclip"></i>Project</a> </li>
-                </ul>
-            </div>
-            <div class="footer_3">
-                <h4>Privacy</h4>
-                <ul class="privacy">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer_4">
-                <h4>Contact Us</h4>
-                <div>
-                    <p>9841355367</p>
-                    <p>shareskillsguru@gmail.com</p>
-                </div>
+.time {
+    font-size: 1.5em;
+    color: #c2e730;
+    font-stretch: wider;
+    font-weight: bold;
+}
 
-                <ul class="footer_socials">
-                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
-                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
-                    <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer_copyright">
-            <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
-        </div>
-    </footer>
+.date {
+    font-size: 1.5em;
+}
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            //when window width is >=600px
-            breakpoints: {
-                600: {
-                    slidesPerView: 2
-                }
-            }
-        });
-    </script>
-    <script>
-        let time = document.getElementById("current-time");
-        setInterval(() => {
-            let d = new Date();
-            time.innerHTML = d.toLocaleTimeString();
-        }, 1000)
-    </script>
-    <script>
-        const countE1 = document.getElementById("count");
-        countvisits();
-        function countvisits() {
-            fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
-                .then((res) => res.json())
-                .then((res) => {
-                    countE1.innerHTML = res.value;
-                });
-        } 
-    </script>
-</body>
+section {
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
 
-</html>
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: pink;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: aqua;
+}
+
+a {
+    color: var(--color-white);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*==============navbar======*/
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: #080b00;
+}
+
+/* change navbar styles on scroll using JavaScript */
+
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav__menu a {
+    font-size: 1rem;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.nav__menu .fa {
+    margin-right: 10px;
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+
+/*==============navbar======*/
+
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 160vh;
+    /* margin-bottom: 5rem; */
+    width: auto;
+}
+
+.schedule h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: auto;
+    width: auto;
+    border: black;
+}
+
+.schedule {
+    margin: 0.2rem auto;
+    padding: 10px;
+}
+
+.schedule h2:hover {
+    color: yellow;
+    background-color: rgb(47, 0, 255);
+}
+
+.header__container {
+    display: grid;
+    height: auto;
+}
+
+.header__left {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: yellow;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+span.fade {
+    opacity: 1;
+}
+
+/*==============POPULAR COURSES====== */
+.courses {
+    margin-top: 1rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.courses {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.courses__infor {
+    padding: 2rem;
+}
+
+.courses:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.courses__info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+
+/*==============FAQs============ */
+.faqs {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    height: fit-content;
+    /* background: var(--color-primary); */
+    background: #143014;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1rem;
+}
+
+.faq p {
+    margin-top: 00.5rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+
+/*==============Testimonials============ */
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 1rem;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-bg1);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: " ";
+    display: block;
+    background: linear-gradient(135deg, transparent, var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+/*============== footer ============ */
+footer {
+    background: var(--color-bg1);
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footer_container>div h4 {
+    margin-bottom: 0.2rem;
+}
+
+.footer_1 p {
+    margin: 0 0 1rem;
+}
+
+footer ul li {
+    margin-bottom: 0.1rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-bg2);
+}
+
+/*  ======= Media Queries (Tablet) ======== */
+@media screen and (max-width: 1024px) {
+    .container {
+        /* width: var(--continer-width-md); */
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /*  ======= navbar ======== */
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav__menu li {
+        width: 100%;
+        height: 3.5rem;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav__menu li::nth-child(2) {
+        animation-delay: 200ms;
+    }
+
+    .nav__menu li::nth-child(3) {
+        animation-delay: 400ms;
+    }
+
+    .nav__menu li::nth-child(4) {
+        animation-delay: 600ms;
+    }
+
+    @keyframes animateNavItems {
+        0% {
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+
+        100% {
+            transform: rotateZ(0) rotateX(0deg) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .nav__menu li a {
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .nav__menu li a: hover {
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+
+    /*========= header ======== */
+    header {
+        /* height: 52vh; */
+        height: 180vh;
+        /* margin-bottom: 4rem; */
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /*========= categories ======== */
+    .categories {
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /*========= categories ======== */
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*========= FAQs ======== */
+    .faq {
+        padding: 1rem;
+    }
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    /*========= footer ======== */
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*========= MEDIA QUERIES (PHONE) ======== */
+@media screen and (max-width:600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /*========= navbar ======== */
+    .nav__menu {
+        right: 3%;
+    }
+
+    /*========= header ======== */
+    header {
+        height: 250vh;
+        /* height: auto; */
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .header__left p {
+        margin-bottom: 1.3rem;
+    }
+
+    /*========= categories ======== */
+    .categories__right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .category__icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+    /*========= footer ======== */
+    .footer_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer_1 p {
+        margin: 1rem auto;
+    }
+
+    .footer_socials {
+        justify-content: center;
+    }
+
+}
+
+/* Authors section  */
+.Author {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    width: 16rem;
+    height: 25rem;
+}
+
+.team:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team-image img {
+    filter: saturate(none);
+
+}
+
+.team-image:hover img {
+    filter: saturate(0);
+}
+
+.team-info * {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.team-info p {
+    color: var(--color-light);
+}
+
+.team-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.team:hover .team-socials {
+    right: 0;
+}
+
+.team-socials a {
+    padding: 1rem;
+}
+
+/*========== achievement =======*/
+.about_achievements {
+    margin-top: 3rem;
+}
+
+.about_achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about_achievements-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievement_card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement_card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievement_icon {
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.achievement_card:nth-child(2) .achievement_icon {
+    background: var(--color-success);
+}
+
+.achievement_card:nth-child(3) .achievement_icon {
+    background: var(--color-primary);
+}
+
+.achievement-card p {
+    margin-top: 1rem;
+}
+
+/*========== MEDIA QUERIES (TABLETS) =======*/
+@media screen and (max-width: 1024px) {
+    .about_achievements {
+        margin-top: 2rem;
+    }
+
+    .about_achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about_achievements-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team {
+        padding: 1rem;
+    }
+}
+
+/*========== MEDIA QUERIES (phones) =======*/
+@media screen and (max-width: 600px) {
+    .achievements_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team {
+        padding: 0;
+    }
+
+    .team p {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Authors section end */
+.conTitle {
+    /* width: 400px; */
+    font-size: 1.6em;
+    font-weight: bolder;
+    border-bottom: 5px solid red;
+    margin-bottom: 2.8rem;
+    border-right: 10px solid yellow;
+    border-left: yellow 5px solid;
+    border-top: 1px solid red;
+    margin-left: -40px;
+}
+
+.menu3d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem 5rem;
+}
+
+.list3d {
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+.list3d li {
+    position: relative;
+    list-style: none;
+    width: 220px;
+    background-color: rgb(2, 55, 9);
+    padding: 15px;
+    transition: 0.5s;
+    z-index: calc(1*var(--i));
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list3d li:hover {
+    transform: translateX(-50px);
+    background: var(--clr);
+}
+
+.list3d li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    filter: brightness(0.7);
+    transform-origin: right;
+    background: rgb(41, 33, 41);
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+.list3d li:hover::before {
+    background: var(--clr);
+    filter: brightness(0.7);
+}
+
+.list3d li::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(6, 149, 49);
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewx(45deg);
+    transition: 0.5s;
+}
+
+.list3d li:hover::after {
+    background: var(--clr);
+    filter: brightness(0.9);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+}
+
+.list3d li a {
+    color: rgb(32, 3, 117);
+}
