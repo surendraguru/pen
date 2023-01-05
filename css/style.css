@@ -782,13 +782,14 @@ footer ul li a:hover {
     border-right: 10px solid yellow;
     border-left: yellow 5px solid;
     border-top: 1px solid red;
+    margin-left: -40px;
 }
 
 .menu3d {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 0.2rem 5rem;
 }
 
 .list3d {
