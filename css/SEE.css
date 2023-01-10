@@ -83,6 +83,10 @@
     padding: 1vh 3vw;
 }
 
+p b {
+    color: #3bb914;
+}
+
 @media(max-width:600px) {
 
     .wrap-box .content,
