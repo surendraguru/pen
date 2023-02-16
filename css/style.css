@@ -787,7 +787,10 @@ footer ul li a:hover {
     text-align: center;
 
 }
-
+.vaca:hover {
+    background-color: chartreuse;
+    color: indigo;
+}
 .conTitle {
     /* width: 400px; */
     font-size: 1.6em;
