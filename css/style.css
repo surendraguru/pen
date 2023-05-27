@@ -787,10 +787,12 @@ footer ul li a:hover {
     text-align: center;
 
 }
+
 .vaca:hover {
     background-color: chartreuse;
     color: indigo;
 }
+
 .conTitle {
     /* width: 400px; */
     font-size: 1.6em;
@@ -805,9 +807,10 @@ footer ul li a:hover {
 
 .menu3d {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem 5rem;
+    margin: 2rem 5rem;
 }
 
 .list3d {
@@ -871,9 +874,12 @@ footer ul li a:hover {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* grid-template-columns: repeat(1fr 1fr); */
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .list3d li a {
