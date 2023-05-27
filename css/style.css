@@ -572,7 +572,7 @@ footer ul li a:hover {
 
     /*========= header ======== */
     header {
-        height: 250vh;
+        height: 100%;
         /* height: auto; */
     }
 
