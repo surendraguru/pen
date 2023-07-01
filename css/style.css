@@ -886,3 +886,14 @@ footer ul li a:hover {
 .list3d li a {
     color: rgb(32, 3, 117);
 }
+.project {
+    text-align: center;
+}
+
+.project p {
+    font-size: large;
+}
+
+.project p a:hover {
+    border: 2px solid red;
+}
