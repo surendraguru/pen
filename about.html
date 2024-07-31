@@ -53,7 +53,7 @@
         <div class="container team_container">
             <article class="team">
                 <div class="team-image">
-                    <img src="./images/tm1.JPG" alt="">
+                    <img src="./images/tm1.JPG" alt="tutor_image">
                 </div>
                 <div class="team-info">
                     <h4>Surendra Prasad Tharu (Badhai)</h4>
@@ -72,7 +72,7 @@
     <section class="about_achievement">
         <div class="container about-achievement-container">
             <div class="about_achievement-left">
-                <img src="./image/about achievements.svg" alt="">
+                <img src="./image/about achievements.svg" alt="achievement_image">
             </div>
             <div class="about_achievements-right">
                 <h1>Achievements</h1>
@@ -165,14 +165,24 @@
     </footer>
     <script>
         const countE1 = document.getElementById("count");
-        countvisits();
-        function countvisits() {
-            fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
-                .then((res) => res.json())
-                .then((res) => {
-                    countE1.innerHTML = res.value;
-                });
-        } 
+       
+      const CountVisitors = async () => {
+        try{
+            const Visitors = await fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1');
+
+            const Viewers = Visitors.json();
+
+countE1.innerHTML = Viewers.value || 0;
+
+        }catch{
+
+        throw new Error('Failed to fetch the visitors');
+
+        }
+      }
+
+
+      CountVisitors();
     </script>
     <script src="./main.js"></script>
 </body>

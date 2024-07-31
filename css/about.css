@@ -14,12 +14,21 @@
     width: 300px;
     height: 400px;
 }
+
+.team{
+    display:col;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+}
 .team:hover{
     background: transparent;
     border-color: var(--color-primary);
 }
+
 .team-image img{
     filter: saturate(none);
+   
     
 }
 .team-image:hover img{
@@ -118,6 +127,10 @@
     .team{
         padding: 1rem;
     }
+
+    .team{
+        margin-left: 10rem;
+    }
 }
 
 /*========== MEDIA QUERIES (phones) =======*/
@@ -129,8 +142,28 @@
     
     .team{
         padding: 0;
+        margin-left: 2rem;
     }
     .team p{
         margin-bottom: 1.5rem;
     }
 }
+
+
+
+/* Scrollbar  */
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 6px; 
+}
+
