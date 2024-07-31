@@ -40,7 +40,7 @@
             justify-content: center;
         }
 
-        .group {}
+         /*.group {}*/
 
         .match {
             height: 120px;
@@ -89,8 +89,8 @@
                 <li><a href="Virus.html"><i class="fa fa-paperclip"></i>Notes</a> </li>
                 <li><a href="projectwork.html"><i class="fa fa-paperclip"></i>Project</a> </li>
             </ul>
-            <button id="open-menu-btn">Menu<i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn">Menu<i class="uil uil-multiply"></i></button>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
     <!--=====END OF NAVBAR====-->
@@ -171,11 +171,12 @@
     <script>
         const countE1 = document.getElementById("count");
         countvisits();
-        function countvisits() {
-            fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
+         function countvisits () {
+             fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
                 .then((res) => res.json())
                 .then((res) => {
                     countE1.innerHTML = res.value;
+                    console.log('Thi is count',res)
                 });
         } 
     </script>
