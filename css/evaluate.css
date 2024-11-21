@@ -39,3 +39,23 @@ h4 {
     padding-top: 30px;
     border-radius: 7px;
 }
+
+
+
+
+/* Scrollbar design */
+
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 6px; 
+  }
