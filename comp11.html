@@ -257,145 +257,21 @@
                     </div>
                 </article>
             </div>
-            <!-- tab three -->
-            <!-- <input type="radio" name="box" id="box4">
-            <label for="box4">Modules</label>
+          
+            <!-- tab Three -->
+ <input type="radio" name="box" id="box4">
+            <label for="box4">Chapter-3</label>
             <div class="content">
-                <h3 class="cont">QBASIC Programming Theory</h3>
+                <h3 class="cont">Web Technology</h3>
                 <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
-                        <h4 class="cont">Modular Programming - Theory (One-mark Questions) </h4>
-                        <p class="ques">1. What is QBASIC? </p>
-                        <P>Ans: A modular programming language, where program is divided in different modules or
-                            functions is called QBASIC.</P>
-                        <p class="ques">2. What is syntax?</p>
-                        <p>Ans: The rule and grammar followed while writing statements, functions and variables in
-                            any
-                            programming language is called syntax.</p>
-                        <p class="ques">3. Define variable and constant.</p>
-                        <p>Ans: A location in the memory, contents of which can be changed during program execution
-                            is
-                            called Variable.</p>
-                        <p>A symbol whose value does not change during program execution is called Constant .</p>
-                        <p class="ques">4. What is operator?</p>
-                        <p>Ans: Symbols, which are used for mathematical calculations, logical and string operations
-                            is
-                            called operator.</p>
-                        <p class="ques">5. What is relational operator?</p>
-                        <p>Ans: Relational operator is symbol, which are used in relational or logical expressions.
-                        <p class="ques">6. What is Logical operator?</p>
-                        <p>Ans: Logical operators are symbols, which are used to combine two or more logical or
-                            relational expressions and return a single true or false value.</p>
-                        <p class="ques">7. What is looping?</p>
-                        <p>Ans: A control structure that executes the same program statement or block of program
-                            statements repeatedly for specified number of times or till the given condition is
-                            satisfied
-                            is called Looping.</p>
-                        <p class="ques">8. What is nested loop?</p>
-                        <p>Ans: A loop within another loop is called nested loop.
-                        <p class="ques">9. What is infinite loop
-                        <p>Ans: Never terminating loop is called infinite loop.</p>
-                        <p class="ques">10. What is array?</p>
-                        <p>Ans: A collection of the data of similar type, all of which are referred by a single
-                            variable name with different subscripts is called array.</p>
-                        <p class="ques">11. Define user defined functions.</p>
-                        <p>Ans: The function which is written and stored by the programmer to do the specific task
-                            is
-                            called user defined functions. The programmer defines this type of function, if QBASIC
-                            does
-                            not provide a built-in function to solve any problem required by the programmer.
-                            FUNCTION -
-                            END FUNCTION statement can be used to define a user defined function.
-                            Example: DECLARE FUNCTION SUM (NUM1,NUM2) .</p>
-                        <p class="ques">12. Define built-in or Library Functions.</p>
-                        <p>Ans: The functions provided by the QBASIC system is called built in or library functions.
-                            They allow the programmer to use them according to the requirement. Built in functions
-                            require to be called by the programmer to use them in a program. Example: LEN, MID$ etc.
-                        </p>
-                        <p class="ques">13. Define modular Programming.</p>
-                        <p>Ans: An approach in which the program is divided into separate independent units, called
-                            modules to perform specific task is called modular programming.</p>
-                        <p class="ques">14. Mention any two advantages of modular programming.</p>
-                        <p>Ans: (i) Reducing redundancy of code (Code re-usability)
-                            (ii) Saving time during project development</p>
-                        <p class="ques">15. Why QBASIC is called modular programming language?</p>
-                        <p>Ans: QBASIC is called modular programming language because it allows the user to divide
-                            program into manageable and functional modules or blocks with the help of sub procedure
-                            and
-                            function procedure.</p>
-                        <p class="ques">16. Define Main module.</p>
-                        <p>Ans: The top level module is called main module, which is located at the top of all
-                            procedures such as sub procedures or function procedure. It is the entry point of
-                            modular
-                            programming. Procedure name and parameters are declared and called from the main module.
-                        <p class="ques">17. Define Sub Procedure.</p>
-                        <p>Ans: A small manageable and functional part of a program that performs specific tasks and
-                            does not return any value to the calling module is called Sub procedure.</p>
-                        <p class="ques">18. What is the use of CALL statement.</p>
-                        <p>Ans: The CALL statement transfers the control to sub procedure and statement in the sub
-                            procedure execute. It is used to call or execute a sub procedure from the main module.
-                        <p class="ques">19. Define arguments.</p>
-                        <p>Ans: The constant or variables enclosed in the parenthesis of procedure call statement
-                            and
-                            that are supplied to a procedure are called arguments. It is also known as actual
-                            parameter.
-                            The argument can be passed to a procedure either by reference or by the value method.
-                        </p>
-                        <p class="ques">20. Define parameters.</p>
-                        <p>Ans: Variables in sub module or a procedure declaration which accept data or variables
-                            passed to them from the calling module are called parameters. It is also known as formal
-                            parameter.</p>
-                        <p class="ques">21. Define Local Variable.</p>
-                        <p>Ans: A variable which is defined in a module and is not accessible to any other modules
-                            is
-                            called local variable. It is only accessible to the module where it is defined. Value of
-                            local variable is destroyed when execution of module is over.</p>
-                        <p class="ques">22. Define Global Variable.</p>
-                        <p>Ans: A variable in main module which can be accessed from any modules or procedure of a
-                            program is called global variable. Variable can be made global declaring them with DIM
-                            SHARED or COMMON SHARED or SHARED attribute.</p>
-                        <p class="ques">23. Write about Passing argument by reference.</p>
-                        <p>Ans: Arguments are normally passed to a sub program by reference, which gives the
-                            procedure
-                            access to the actual variable. In this method, the address of each variable is passed to
-                            the
-                            procedure. The changes made in the procedure's variable they will make change in the
-                            value
-                            of arguments. It is the default mode of passing arguments in QBASIC. Example: CALL TEST
-                            (A,B)</p>
-                        <p class="ques">24. Write about Passing argument by value.</p>
-                        <p>Ans: Argument passed by the value method does not make any effect to value of the
-                            variables
-                            which are passed to a procedure even they are changed in the procedure. When arguments
-                            are
-                            passed by value method, it makes a duplicate copy of arguments and their values are used
-                            directly in the parameters. The changes made in the procedure's variable they does not
-                            make
-                            any change in the value of arguments. To pass argument by value method each argument is
-                            enclosed in individual parentheses in the calling statement. Example: CALL TEST ( (A) ,
-                            (B)
-                            )</p>
-                        <p class="ques">25. Define procedure.</p>
-                        <p>Ans: A collection of code which perform an action is called procedure.</p>
-                        <p class="ques">26. Mention the types of procedure.</p>
-                        <p>Ans: (i) Sub procedure (ii) Function procedure</p>
-                        <p class="ques">27. List any two advantages of procedure.</p>
-                        <p>Ans: (i) It divides big program into small manageable module , makes easy to debug.
-                            (ii) It reduces the program codes because a single module can be used in different
-                            places.
-                        </p>
-                        <p class="ques">28. Differentiate between Function and Sub procedure.</p>
-                        <p>Ans:</p>
-                        <p> Function Procedure
-                            (i) It returns value. (ii) It does not use call statement. </p>
-                        <p> Sub Procedures (i) It does not return value.
-                            (ii) It uses call statement.</p> -->
-            <!-- </div>
+                        <h4 class="cont"><a href="https://drive.google.com/file/d/13PyrnZEWk0xyTIVa3lZC5LcZOJggaUog/view?usp=sharing">Notes for Web Technology</a></h4>
+                        
+                    </div>
                 </article>
-            </div> -->
-
-            <!-- tab four -->
+            </div>
+<!--             tab four -->
 
         </div>
     </div>
