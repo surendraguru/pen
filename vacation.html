@@ -167,8 +167,7 @@
                         <h4>ShareSkills</h4>
                     </a>
                     <p>Grow your Skills</p>
-                    <h5>Page Viewers:</h5>
-                    <h4 id="count">0</h4>
+                   
                 </div>
                 <div class="footer_2">
                     <h4>Permalinks</h4>
@@ -208,17 +207,7 @@
                 <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
             </div>
         </footer>
-        <script>
-            const countE1 = document.getElementById("count");
-            countvisits();
-            function countvisits() {
-                fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
-                    .then((res) => res.json())
-                    .then((res) => {
-                        countE1.innerHTML = res.value;
-                    });
-            } 
-        </script>
+       
         <script src="./main.js"></script>
 </body>
 
