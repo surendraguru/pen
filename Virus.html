@@ -771,44 +771,7 @@ The stored program concept enables general-purpose computing, where a single com
 
         <!--=====Achievements ====-->
 
-        <section class="about_achievement">
-            <div class="container about-achievement-container">
-                <div class="about_achievement-left">
-                    <img src="./image/about achievements.svg" alt="">
-                </div>
-                <div class="about_achievements-right">
-                    <h1>Achievements</h1>
-                    <p>!</p>
-                    <div class="achievements_cards">
-                        <article class="achievement_card">
-                            <span class="achievement_icon">
-                                <i class="uil uil-video"></i>
-                            </span>
-                            <h3>500+</h3>
-                            <p>Courses</p>
-
-                        </article>
-
-                        <article class="achievement_card">
-                            <span class="achievement_icon">
-                                <i class="uil uil-trophy"></i>
-                            </span>
-                            <h3>25+</h3>
-                            <p>Awards</p>
-
-                        </article>
-
-                        <article class="achievement_card">
-                            <span class="achievement_icon">
-                                <i class="uil uil-users-alt"></i>
-                            </span>
-                            <h3>50,000+</h3>
-                            <p>Students</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <!--=====END OF Achievements ====-->
 
@@ -863,17 +826,7 @@ The stored program concept enables general-purpose computing, where a single com
                 <small>Copyright & copy; YouTube ShareSkills.youtube.com</small>
             </div>
         </footer>
-        <script>
-            const countE1 = document.getElementById("count");
-            countvisits();
-            function countvisits() {
-                fetch('https://api.countapi.xyz/update/spt.com.np/web/?amount=1')
-                    .then((res) => res.json())
-                    .then((res) => {
-                        countE1.innerHTML = res.value;
-                    });
-            } 
-        </script>
+        
         <script src="./main.js"></script>
 </body>
 
